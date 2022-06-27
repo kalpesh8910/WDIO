@@ -16,6 +16,7 @@ When(/^Search with (.*)$/, async function (SearchIteam) {
   await browser.keys("Enter");
 });
 
+
 Then(/^Click on frist result search$/, async function () {
   let ele = await $(`<h3>`);
   ele.click();
