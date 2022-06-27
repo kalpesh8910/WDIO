@@ -1,6 +1,6 @@
 Feature: demo feature
 
-    @demo
+    
 
     Scenario Outline: search from google
         Given Google Page is opened
