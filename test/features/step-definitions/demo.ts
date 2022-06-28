@@ -1,5 +1,5 @@
 import { Given, When, Then } from "@wdio/cucumber-framework";
-import chai from "chai"
+import chai from "chai";
 
 Given(/^Google Page is opened$/, async function () {
   console.log(`Before opening browser`);
@@ -25,24 +25,20 @@ Then(/^Click on frist result search$/, async function () {
 Then(/^Url should match (.*)$/, async function (ExpectedUrl) {
   console.log(` >> ExpectedUrl: $(ExpectedUrl)`);
   await browser.pause(5000);
-
 });
 
 /*
-* Web Interactions
-*/
+ * Web Interactions
+ */
 
-Given(/^A web page is opened$/, async function(){
+Given(/^A web page is opened$/, async function () {
+  await browser.url("/inputs");
+  await browser.setTimeout({ implicit: 15000, pageLoad: 10000 });
+  await browser.maximizeWindow();
+  await browser.pause(5000);
+});
 
-  await browser.url("/inputs")
-  await browser.setTimeout({implicit: 15000, pageLoad: 10000})
-  await browser.maximizeWindow()
-  await browser.pause(5000)
-
-})
-
-When(/^Perform web interaction$/, async function() {
-  
+When(/^Perform web interaction$/, async function () {
   //1. Input box
 
   //Actions:
@@ -51,12 +47,23 @@ When(/^Perform web interaction$/, async function() {
   // 3. Click and type
   // 4. Slow typing
 
-  
-  let ele1 = await (await $('[type=number]')).setValue("12345")
-  await browser.pause(5000)
-//  await ele1.setValue('12345')
-  browser.pause(3000)
+  let num = 1234566;
+  let strnum = num.toString();
+
+  let ele1 = await await $("[type=number]");
+  await ele1.click();
+  await browser.pause(3000);
+  //await ele1.scrollIntoView
+  //await ele1.addValue(strnum)
+  //await browser.pause(5000);
 
   //await browser.debug()
+  
+  // below for loop is user for the typing into a slowly in the field
 
-})
+  for (let i = 0; i < strnum.length; i++) {
+    let chatStrr = strnum.charAt(i);
+    await browser.pause(1000);
+    await browser.keys(chatStrr);
+  }
+});

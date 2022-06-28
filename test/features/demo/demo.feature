@@ -1,7 +1,6 @@
 Feature: demo feature
 
-    
-
+   
     Scenario Outline: search from google
         Given Google Page is opened
         When Search with <SearchIteam>
