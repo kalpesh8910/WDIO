@@ -35,7 +35,8 @@ Then(/^Url should match (.*)$/, async function (ExpectedUrl) {
 Given(/^A web page is opened$/, async function () {
   //await browser.url("/inputs");
   //await browser.url("/dropdown");
-  await browser.url("/checkboxes");
+  //await browser.url("/checkboxes");
+  await browser.url("/windows");
   await browser.setTimeout({ implicit: 15000, pageLoad: 10000 });
   await browser.maximizeWindow();
   await browser.pause(5000);
@@ -129,13 +130,72 @@ When(/^Perform web interaction$/, async function () {
   // await browser.pause(3000);
   //await browser.debug()
 
-  let eleArr = await $$("//form[@id='checkboxes']/input");
+  // let eleArr = await $$("//form[@id='checkboxes']/input");
 
-  for (let i = 0; i < eleArr.length; i++) {
-    let ele = eleArr[i];
-    if (!(await ele.isSelected())) {
-      ele.click();
-      await browser.pause(5000);
+  // for (let i = 0; i < eleArr.length; i++) {
+  //   let ele = eleArr[i];
+  //   if (!(await ele.isSelected())) {
+  //     ele.click();
+  //     await browser.pause(5000);
+  //   }
+  // }
+
+  // 5. Window Handling
+  //   Steps:
+  //   1. Launch the browser
+  //   2. Open another window
+  //   3. Switch to the window based on title
+  //   4. Switch back to the main window
+
+  //   Methods used:
+  //   1. getTitle
+  //   2. getWindowhandle()
+  //   3. getWindowhandles()
+  //   4. switchTowindow()
+
+  // open new windows
+  await $("=Click Here").click();
+  await browser.pause(2000);
+  await $("=Elemental Selenium").click();
+  await browser.pause(2000);
+
+  let currentWinTitle = await browser.getTitle();
+  console.log("Current window title is:- " + currentWinTitle);
+  await browser.pause(2000);
+
+  // Switch to specific window
+
+  let winHandles = await browser.getWindowHandles();
+
+  for (let i = 0; i < winHandles.length; i++) {
+    console.log(`window handle:- ${winHandles[i]}`);
+    await browser.switchToWindow(winHandles[i]);
+    let currentWinTitle = await browser.getTitle();
+    let parentwinhandle = await browser.getWindowHandle();
+
+    if (
+      currentWinTitle ===
+      "Elemental Selenium: Receive a Free, Weekly Tip on Using Selenium like a Pro"
+    ) {
+      await browser.switchToWindow(winHandles[i]);
+      let headerTextsel = await $("<h1>").getText;
+      console.log(`headerTextsel: ${headerTextsel}`);
+      // rest of the actions go here...
+      break;
     }
+
+    // Switch back to parent window
+
+    await browser.switchToWindow(parentwinhandle);
+    let parentWinheaderText = await $("<h3>").getText();
+    console.log(`parentWinheaderText: ${parentWinheaderText}`);
+    // continue with rest of executiion...
   }
+
+  // 6. Handling Alerts
+  // 1. isAlertopen()
+  // 2. acceptAlert()
+  // 3. dismisAlert()
+  // 4. getAlertText()
+  // 5. sendAlertText()
 });
