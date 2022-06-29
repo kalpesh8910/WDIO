@@ -189,6 +189,7 @@ When(/^Perform web interaction$/, async function () {
     await browser.switchToWindow(parentwinhandle);
     let parentWinheaderText = await $("<h3>").getText();
     console.log(`parentWinheaderText: ${parentWinheaderText}`);
+    console.log(`parentWinheaderText: ${parentWinheaderText}`);
     // continue with rest of executiion...
   }
 
