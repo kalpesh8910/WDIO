@@ -33,43 +33,52 @@ Then(/^Url should match (.*)$/, async function (ExpectedUrl) {
  */
 
 Given(/^A web page is opened$/, async function () {
-  //await browser.url("/inputs");
-  //await browser.url("/dropdown");
-  //await browser.url("/checkboxes");
-  //await browser.url("/windows");
-  //await browser.url("/javascript_alerts");
-  await browser.url("/basic_auth");
+  // await browser.url("/inputs");
+  // await browser.url("/dropdown");
+  // await browser.url("/checkboxes");
+  // await browser.url("/windows");
+  // await browser.url("/javascript_alerts");
+  // await browser.url("/basic_auth");
+  // await browser.url("/upload");
+  await browser.url("/frames");
   await browser.setTimeout({ implicit: 15000, pageLoad: 10000 });
   await browser.maximizeWindow();
   await browser.pause(5000);
 });
 
 When(/^Perform web interaction$/, async function () {
+ 
   //1. Input box
-  //Actions:
+   // Actions:
   // 1. Type into input Box
-  // 2. Clear the field and type or just addvalue
-  // 3. Click and type
-  // 4. Slow typing
-  //let num = 1234566;
-  //let strnum = num.toString();
-  //let ele1 = await await $("[type=number]");
-  //await ele1.click();
-  //await browser.pause(3000);
-  // await ele1.scrollIntoView
-  // await ele1.addValue(strnum)
-  // await browser.pause(5000);
-  // await browser.debug()
-  // below for loop is user for the typing into a slowly in the field
-  //for (let i = 0; i < strnum.length; i++) {
-  //let chatStrr = strnum.charAt(i);
-  //await browser.pause(1000);
-  //await browser.keys(chatStrr);
+   //2. Clear the field and type or just addvalue
+   //3. Click and type
+   //4. Slow typing
+  /*
+   let num = 1234566;
+  let strnum = num.toString();
+  let ele1 = await await $("[type=number]");
+  await ele1.click();
+  await browser.pause(3000);
+   await ele1.scrollIntoView
+   await ele1.addValue(strnum)
+   await browser.pause(5000);
+   await browser.debug()
+   
+   //below for loop is user for the typing into a slowly in the field
+  
+   for (let i = 0; i < strnum.length; i++) {
+  let chatStrr = strnum.charAt(i);
+  await browser.pause(1000);
+  await browser.keys(chatStrr);
+  
+ 
   // 2. Dropdown
   //Actions:
   //1. Assert default option is selected or not
   //2. Select by attribute, text , inbox
   //3. Get a list of options
+ 
   // 1. Assert default option is selected
   // Get the text from drop down
   // let ele2 = await $('//select/option[@selected="selected"]')
@@ -79,6 +88,7 @@ When(/^Perform web interaction$/, async function () {
   // await browser.pause(2000);
   // expect(val).to.equal('Please select an option');
   // await browser.pause(2000);
+ 
   // 2. Select a specific option from drop down
   // let ddele = await $('#dropdown');
   // //await ddele.selectByVisibleText("Option 2");
@@ -86,6 +96,7 @@ When(/^Perform web interaction$/, async function () {
   // await ddele.selectByIndex(2);
   // await browser.pause(4000);
   // await browser.debug();
+ 
   // 3. Get a list of options
   // let eleArray = await $$('select > option');
   // let arr = []
@@ -96,6 +107,7 @@ When(/^Perform web interaction$/, async function () {
   //   console.log("value of the drop down is:-",val);
   // }
   // console.log('>> option array: ${arr}');
+ 
   // 4. Checkbox
   // Actions:
   // 1. Select an options
@@ -115,6 +127,7 @@ When(/^Perform web interaction$/, async function () {
   // await browser.pause(3000);
   //await browser.debug()
   // let eleArr = await $$("//form[@id='checkboxes']/input");
+  
   // for (let i = 0; i < eleArr.length; i++) {
   //   let ele = eleArr[i];
   //   if (!(await ele.isSelected())) {
@@ -122,6 +135,7 @@ When(/^Perform web interaction$/, async function () {
   //     await browser.pause(5000);
   //   }
   // }
+ 
   // 5. Window Handling
   //   Steps:
   //   1. Launch the browser
@@ -165,20 +179,40 @@ When(/^Perform web interaction$/, async function () {
   //   console.log(`parentWinheaderText: ${parentWinheaderText}`);
   //   // continue with rest of executiion...
   // }
+ 
   // 6. Handling Alerts
   // 1. isAlertopen()
   // 2. acceptAlert()
   // 3. dismisAlert()
   // 4. getAlertText()
   // 5. sendAlertText()
+  
   // await $(`button=Click for JS Prompt`).click();
   // await browser.pause(2000);
   // if (await browser.isAlertOpen()) {
-  //   let alertText = await browser.getAlertText();
-  //   console.log(`alert test is:- ` + alertText);
-  //   await browser.sendAlertText(`Hello js prompt`);
-  //   await browser.pause(2000);
-  //   await browser.acceptAlert();
-  //   await browser.pause(2000);
-  // }
+   //  let alertText = await browser.getAlertText();
+   //  console.log(`alert test is:- ` + alertText);
+   //  await browser.sendAlertText(`Hello js prompt`);
+    // await browser.pause(2000);
+    // await browser.acceptAlert();
+    // await browser.pause(2000);
+   }
+*/
+   /*
+    File upload
+    
+  console.log(process.cwd)
+
+ await $(`#file-upload`).addValue(`${process.cwd()}/data/fileupload/dummy.txt`);
+ await browser.pause(3000);
+ await $("#file-submit").click;
+ await browser.pause(4000);
+ */
+
+   /*
+
+   iFrame
+   
+   
+   */
 });
