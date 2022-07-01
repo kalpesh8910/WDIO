@@ -124,7 +124,9 @@ export const config: Options.Testrunner = {
   // gets prepended directly.
   
   // baseUrl: "https://admin:admin@the-internet.herokuapp.com",
-  baseUrl: "https://the-internet.herokuapp.com",
+   baseUrl: "https://the-internet.herokuapp.com",
+  // baseUrl: "https://www.amazon.com",
+   //baseUrl: "https://www.saucedemo.com/",
  
   //
   // Default timeout for all waitFor* commands.

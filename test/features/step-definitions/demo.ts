@@ -40,7 +40,9 @@ Given(/^A web page is opened$/, async function () {
   // await browser.url("/javascript_alerts");
   // await browser.url("/basic_auth");
   // await browser.url("/upload");
-  await browser.url("/frames");
+     await browser.url("/frames");
+  //   await browser.url("/");
+  
   await browser.setTimeout({ implicit: 15000, pageLoad: 10000 });
   await browser.maximizeWindow();
   await browser.pause(5000);
@@ -199,7 +201,7 @@ When(/^Perform web interaction$/, async function () {
    }
 */
    /*
-    File upload
+   7. File upload
     
   console.log(process.cwd)
 
@@ -210,9 +212,34 @@ When(/^Perform web interaction$/, async function () {
  */
 
    /*
-
-   iFrame
-   
-   
+   8:- iFrame
+    1. Switch to frame
+    2. Switch to parent frame
    */
-});
+/*
+    
+   //await browser.pause(3000);
+   await $(`=iFrame`).click();
+   await browser.pause(3000);
+   let ele1 = await $(`#mce_0_ifr`);
+  // let ele = await (await $(`#mce_0_ifr`)).switchToFrame;
+   await browser.switchToFrame(ele1);
+
+  // await $(`tinymce`).click();
+  // await browser.keys(["Meta", "A"])
+  // await browser.pause(3000);
+  // await browser.keys("Delete")
+   await $(`#tinymce`).setValue(`Typing into a frame`);
+   await browser.pause(3000);
+   //await browser.switchToParentFrame()
+*/
+   
+   /*
+    9. Basic scrolling
+   */
+    // await browser.pause(3000)
+    // let ele45 = await $(`Frequently repurchased in Beauty and Personal Care`).scrollIntoView();
+    // await browser.pause(3000)
+    
+  
+  });
