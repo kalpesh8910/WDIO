@@ -124,9 +124,10 @@ export const config: Options.Testrunner = {
   // gets prepended directly.
   
   // baseUrl: "https://admin:admin@the-internet.herokuapp.com",
-   baseUrl: "https://the-internet.herokuapp.com",
+  // baseUrl: "https://the-internet.herokuapp.com",
   // baseUrl: "https://www.amazon.com",
-   //baseUrl: "https://www.saucedemo.com/",
+  // baseUrl: "https://www.saucedemo.com/",
+     baseUrl: "http://localhost",
  
   //
   // Default timeout for all waitFor* commands.
@@ -187,13 +188,16 @@ export const config: Options.Testrunner = {
     // <boolean> fail if there are any undefined or pending steps
     strict: false,
     // <string> (expression) only execute the features or scenarios with tags matching the expression
-    tagExpression: "@demo",
+    
+    // tagExpression: "@demo",
+    tagExpression: "@WebAdvansed",
+    
     // <number> timeout for step definitions
     timeout: 60000,
     // <boolean> Enable this config to treat undefined definitions as warnings.
     ignoreUndefinedDefinitions: false,
   },
-
+  
   //
   // =====
   // Hooks

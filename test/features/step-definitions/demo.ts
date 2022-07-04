@@ -240,6 +240,5 @@ When(/^Perform web interaction$/, async function () {
     // await browser.pause(3000)
     // let ele45 = await $(`Frequently repurchased in Beauty and Personal Care`).scrollIntoView();
     // await browser.pause(3000)
-    
   
   });
