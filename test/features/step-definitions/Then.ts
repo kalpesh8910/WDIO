@@ -1,19 +1,22 @@
 import { Then } from "@wdio/cucumber-framework";
 import { expect } from "chai";
 
-/*
-Then(/^Inventory page should list <.*>$/, async function (numberOfproducts) {
+
+Then(/^Inventory page should list (.*)$/, async function (numberOfproducts) {
  
   if (!numberOfproducts)
     throw Error(`Invalid product count provided: ${numberOfproducts}`);
   await browser.pause(4000)
   let eleArr = await $$(`.inventory_item_name`);
+  console.log(eleArr.length)
   await browser.pause(7000)
-  chai.expect(eleArr.length).to.equal(parseInt(numberOfproducts)); // ===
+ // console.log("typeof", typeof eleArr.length, typeof numberOfproducts);
+  expect(eleArr.length).to.be.equal(parseInt(numberOfproducts)); // ===
   await browser.pause(7000)
+  console.log("Test cases exceuted sucessfully...")
 
 });
-*/
+
 /*
 
 Steps:-
@@ -21,6 +24,7 @@ Steps:-
 2. COnvert string to nunmber
 3. Aseert if any value is <=
 */
+
 
 Then(/^Validate all products have valid price$/, async function(){
 
@@ -38,11 +42,9 @@ console.log(` All the product price with $:-${priceStrArr}`);
 let pricenumarr = priceStrArr.map(ele => +(ele.replace("$", "")));
 console.log(`Price in numbers:- ${pricenumarr}`);
  
-
 // 3. Aseert if any value is <=
 
-let invalidpriceArray = pricenumarr.filter(ele => ele<=0);
-
+let invalidpriceArray = pricenumarr.filter(ele => ele<=0)
 expect(invalidpriceArray.length).to.equal(0);
 
 })

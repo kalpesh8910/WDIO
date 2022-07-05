@@ -124,10 +124,10 @@ export const config: Options.Testrunner = {
   // gets prepended directly.
   
   // baseUrl: "https://admin:admin@the-internet.herokuapp.com",
-  // baseUrl: "https://the-internet.herokuapp.com",
+     baseUrl: "https://the-internet.herokuapp.com",
   // baseUrl: "https://www.amazon.com",
   // baseUrl: "https://www.saucedemo.com/",
-     baseUrl: "http://localhost",
+  // baseUrl: "http://localhost",
  
   //
   // Default timeout for all waitFor* commands.
@@ -190,7 +190,9 @@ export const config: Options.Testrunner = {
     // <string> (expression) only execute the features or scenarios with tags matching the expression
     
     // tagExpression: "@demo",
-    tagExpression: "@WebAdvansed",
+   //  tagExpression: "@WebAdvansed",
+       tagExpression: "@WebTable",
+    
     
     // <number> timeout for step definitions
     timeout: 60000,
