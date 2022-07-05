@@ -7,7 +7,7 @@ import { expect } from "chai";
     3. Get single row [] based on condition]
     4. Get single column
     5. Get single cell value [based on another cell]
-*/
+*/  
 
 Given(/^Open the website$/, async function () {
 
@@ -39,18 +39,98 @@ let colcount;
   // 2. Check whole table data
   // table[@id='table1']/tbody/tr[4]/td[6]
 
+  let array = []
  Then(/^Check whole table data$/, async function(){
 
      for(let i=0; i<rowcount; i++){
+        let personObj = {
+            lastname:"",
+            firstname:"",
+            email:"",
+            due:"",
+            website:"",
+            action:"",
+
+        }
          for(let j=0; j<colcount; j++){
              let cellval = await $(`//table[@id='table1']/tbody/tr[${i+1}]/td[${j+1}]`).getText()
              console.log(`Cell value is:-${cellval}`)
+
+             if(j===0)personObj.lastname = cellval
+             if(j===1)personObj.firstname = cellval
+             if(j===2)personObj.email = cellval
+             if(j===3)personObj.due = cellval
+             if(j===4)personObj.website = cellval
+             if(j===5)personObj.action = cellval
+          }
+         
+          array.push(personObj)
         }
-     }
+        
+        console.log(`Whole table: ${JSON.stringify(array, null, 1)}`);
   })
 
   // 3. Get single row [] based on condition]
 
+  Then(/^Get single row based on condition$/, async function(){
+    
+    for(let i=0; i<rowcount; i++){
+        let personObj = {
+            lastname:"",
+            firstname:"",
+            email:"",
+            due:"",
+            website:"",
+            action:"",
+
+        }
+         for(let j=0; j<colcount; j++){
+             let cellval = await $(`//table[@id='table1']/tbody/tr[${i+1}]/td[${j+1}]`).getText()
+             let firstname = await $(`//table[@id='table1']/tbody/tr[${i+1}]/td[2]`).getText()
+             console.log(`Cell value is:-${cellval}`)
+            if(firstname ==="Jason"){
+             if(j===0)personObj.lastname = cellval
+             if(j===1)personObj.firstname = cellval
+             if(j===2)personObj.email = cellval
+             if(j===3)personObj.due = cellval
+             if(j===4)personObj.website = cellval
+             if(j===5)personObj.action = cellval
+          }
+        }
+          if(personObj.firstname)
+          array.push(personObj)
+        }        
+        console.log(`Whole table: ${JSON.stringify(array, null, 1)}`);
+      })
+
+      //  4. Get single column
+
+      Then(/^Get single column$/, async function(){
+
+        let arr = []
+        for(let i=0; i< rowcount; i++){
+
+          let cellval = await $(`//table[@id='table1']/tbody/tr[${i+1}]/td[4]`).getText()
+          arr.push(cellval)
+        }
+        console.log(`Single column values: ${arr}`);
+
+})
   
+Then(/^Get single cell value based on another cell$/, async function(){
+
+  let arr = []
+  for(let i=0; i<rowcount; i++){
+    
+     // let cellval = await $(`//table[@id='table1']/tbody/tr[${i+1}]/td[${j+1}`).getText()
+      let price = await $(`//table[@id='table1']/tbody/tr[${i+1}]/td[4]`).getText()
+      let Firtname = await $(`//table[@id='table1']/tbody/tr[${i+1}]/td[2]`).getText()
+      if(+(price.replace("$", "")) >50) {
+        arr.push(Firtname)
+      
+    }
+  }
+  console.log(`Single column values: ${arr}`);
+})
  
  
