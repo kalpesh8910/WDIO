@@ -1,6 +1,6 @@
 Feature: demo feature
 
-   
+   @IOofficialWebsite
     Scenario Outline: search from google
         Given Google Page is opened
         When Search with <SearchIteam>
@@ -9,4 +9,4 @@ Feature: demo feature
 
         Examples:
             | TestId       | SearchIteam | ExpectedUrl           |
-            | DEMO_TEST_01 | WDIO        | https://webdriver.io/ |
+            | DEMO_TEST_01 | WWDIO        | https://webdriver.io/ |

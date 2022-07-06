@@ -117,7 +117,9 @@ let colcount;
 
 })
   
-Then(/^Get single cell value based on another cell$/, async function(){
+  // 5. Get single cell value based on another cell
+
+ Then(/^Get single cell value based on another cell$/, async function(){
 
   let arr = []
   for(let i=0; i<rowcount; i++){

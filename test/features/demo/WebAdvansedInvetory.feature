@@ -5,7 +5,7 @@ Feature: Advansed Web Interaction inventory
 
         Given login to inventory web page
         Then Inventory page should list <NumberOfProducts>
-        Then Validate all products have valid price
+        #Then Validate all products have valid price
     
 
         Examples:

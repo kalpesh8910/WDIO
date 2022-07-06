@@ -24,7 +24,13 @@ Then(/^Click on frist result search$/, async function () {
 });
 
 Then(/^Url should match (.*)$/, async function (ExpectedUrl) {
-  console.log(` >> ExpectedUrl: $(ExpectedUrl)`);
+  console.log(` >> ExpectedUrl: ${ExpectedUrl}`);
+  await browser.waitUntil(async function(){
+    return await browser.getTitle() === "WebdriverIO · Next-gen browser and mobile automation test framework for Node.js | WebdriverIO"
+  }, {timeout:20000, interval:500, timeoutMsg: `failed loading wdio web page..${await browser.getTitle()}`})
+  let url = await browser.getUrl()
+  console.log("Get the URL is:-"+url)
+  expect(url).to.equal(ExpectedUrl)
   await browser.pause(5000);
 });
 
