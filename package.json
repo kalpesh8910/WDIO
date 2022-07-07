@@ -4,8 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "wdio": "wdio run test/wdio.conf.ts"
+        
+        "IOofficialWebsite": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@IOofficialWebsite'",
+        "WebAdvansed": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@WebAdvansed'"
+        
     },
     "keywords": [],
     "author": "vikas",

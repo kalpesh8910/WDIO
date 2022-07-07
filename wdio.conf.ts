@@ -191,10 +191,10 @@ export const config: Options.Testrunner = {
     // <string> (expression) only execute the features or scenarios with tags matching the expression
     
     // tagExpression: "@demo",
-       tagExpression: "@WebAdvansed",
+       tagExpression: "",
     // tagExpression: "@WebTable",
-     // tagExpression: "@AdvancedScrolling",
-    //tagExpression: "@IOofficialWebsite",
+    // tagExpression: "@AdvancedScrolling",
+    // tagExpression: "@IOofficialWebsite",
     
     // <number> timeout for step definitions
     timeout: 300000,

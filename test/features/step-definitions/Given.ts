@@ -19,7 +19,7 @@ Given(/^login to inventory web page$/, async function () {
     await $(`#login-button`).click();
     await browser.pause(3000);
 
-    await browser.debug()
+    //await browser.debug()
 /*
     // Back and forward 
     
