@@ -1,8 +1,15 @@
 
 import type { Options } from "@wdio/types";
+import {path} from 'app-root-path';
+import { config as configuration } from "dotenv";
+console.log("appRoot", path);
+configuration({ path: `${path}/.env` });
+// TODO: 
+// 1. import dotenv
+// 2. det config path
 
-let headless = process.env.HEADLESS
-let debug = process.env.DEBUG
+let headless = process.env.HEADLESS;
+let debug = process.env.DEBUG;
 
 console.log(`value of the headless: ${headless}`)
 

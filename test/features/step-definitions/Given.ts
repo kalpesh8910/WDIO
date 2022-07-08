@@ -2,9 +2,9 @@ import { Given } from "@wdio/cucumber-framework";
 import { expect } from "chai";
 
  import {path} from 'app-root-path';
- import {config} from "dotenv";
+ import {config as configuration} from "dotenv";
  console.log("appRoot", path);
- config({ path: `${path}/.env` });
+ configuration({ path: `${path}/.env` });
 
 Given(/^login to inventory web page$/, async function () {
 

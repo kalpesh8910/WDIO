@@ -1,5 +1,5 @@
 
-@test
+ #@test
 Feature: Cucumber demo
 
     I can have more info about the Feature...
