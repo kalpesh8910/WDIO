@@ -1,20 +1,31 @@
 import { Given } from "@wdio/cucumber-framework";
 import { expect } from "chai";
 
+ import {path} from 'app-root-path';
+ import {config} from "dotenv";
+ console.log("appRoot", path);
+ config({ path: `${path}/.env` });
+
 Given(/^login to inventory web page$/, async function () {
 
     // 1. Launch the browser
 
-    await browser.url("https://www.saucedemo.com/");
+    //@ts-ignore
+    await browser.url(browser.config.sauceDemoURL);
+    console.log(`Test config values: ${JSON.stringify(browser.config)}`)
+    
     await browser.setTimeout({ implicit: 15000, pageLoad: 10000 });
     await browser.maximizeWindow();
     await browser.pause(3000);
 
     // 2. Login into inventory application
+    console.log(`proces is:- ${process.env}`);
 
-    await $(`#user-name`).setValue(`standard_user`);
+    console.log(`username is:- ${process.env.TEST_STD_USERNAME}`)
+    
+    await $(`#user-name`).setValue(process.env.TEST_STD_USERNAME);
     await browser.pause(3000);
-    await $(`#password`).setValue(`secret_sauce`);
+    await $(`#password`).setValue(process.env.TEST_STD_PASSWORD);
     await browser.pause(3000);
     await $(`#login-button`).click();
     await browser.pause(3000);
@@ -26,10 +37,10 @@ Given(/^login to inventory web page$/, async function () {
     await browser.back();
     await browser.pause(3000);
     await browser.forward();
-/*
+
   // Sourround with try and catch ctrl+shift+p
 
-  // Refressh the web page
+   Refressh the web page
     try {
       await $(`#user-nam`).setValue(`standard_user`);
       await browser.pause(3000);
@@ -50,7 +61,7 @@ Given(/^login to inventory web page$/, async function () {
       await browser.pause(5000)
      
     }
-*/
+
     // Reload the session
 /*
     await browser.reloadSession()

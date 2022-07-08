@@ -1,6 +1,6 @@
 Feature: demo feature
 
-   @IOofficialWebsite @WebAdvansed 
+   @IOofficialWebsite
     Scenario Outline: search from google
         Given Google Page is opened
         #When Search with <SearchIteam>
