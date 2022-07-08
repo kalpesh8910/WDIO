@@ -22,13 +22,15 @@ Given(/^login to inventory web page$/, async function () {
     console.log(`proces is:- ${process.env}`);
 
     console.log(`username is:- ${process.env.TEST_STD_USERNAME}`)
-    
     await $(`#user-name`).setValue(process.env.TEST_STD_USERNAME);
-    await browser.pause(3000);
-    await $(`#password`).setValue(process.env.TEST_STD_PASSWORD);
-    await browser.pause(3000);
+
+    await browser.pause(1000);
+    
+    console.log(`password is:- ${process.env.TEST_STD_PASSWORD}`)
+    await $(`#password`).setValue(process.env.TEST_STD_PASSWORD);    
+    await browser.pause(2000);
     await $(`#login-button`).click();
-    await browser.pause(3000);
+    await browser.pause(2000);
 
     //await browser.debug()
 /*

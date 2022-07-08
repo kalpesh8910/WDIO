@@ -1,34 +1,102 @@
-  [
+{
+  "specs": [
+    "./test/features/**/*.feature"
+  ],
+  "suites": {},
+  "exclude": [],
+  "logLevel": "info",
+  "logLevels": {},
+  "excludeDriverLogs": [],
+  "bail": 0,
+  "waitforInterval": 500,
+  "waitforTimeout": 10000,
+  "framework": "cucumber",
+  "reporters": [
+    "spec",
+    [
+      "allure",
       {
-       "lastname": "Smith",
-       "firstname": "John",
-       "email": "jsmith@gmail.com",
-       "due": "$50.00",
-       "website": "http://www.jsmith.com",
-       "action": "edit delete"
-      },
-      {
-       "lastname": "Bach",
-       "firstname": "Frank",
-       "email": "fbach@yahoo.com",
-       "due": "$51.00",
-       "website": "http://www.frank.com",
-       "action": "edit delete"
-      },
-      {
-       "lastname": "Doe",
-       "firstname": "Jason",
-       "email": "jdoe@hotmail.com",
-       "due": "$100.00",
-       "website": "http://www.jdoe.com",
-       "action": "edit delete"
-      },
-      {
-       "lastname": "Conway",
-       "firstname": "Tim",
-       "email": "tconway@earthlink.net",
-       "due": "$50.00",
-       "website": "http://www.timconway.com",
-       "action": "edit delete"
+        "outputDir": "allure-results"
       }
-]
+    ]
+  ],
+  "services": [
+    "chromedriver"
+  ],
+  "maxInstances": 10,
+  "maxInstancesPerCapability": 100,
+  "filesToWatch": [],
+  "connectionRetryTimeout": 120000,
+  "connectionRetryCount": 3,
+  "execArgv": [],
+  "runnerEnv": {},
+  "runner": "local",
+  "specFileRetries": 0,
+  "specFileRetriesDelay": 0,
+  "specFileRetriesDeferred": false,
+  "reporterSyncInterval": 100,
+  "reporterSyncTimeout": 5000,
+  "cucumberFeaturesWithLineNumbers": [],
+  "autoCompileOpts": {
+    "autoCompile": true,
+    "tsNodeOpts": {
+      "transpileOnly": true,
+      "project": "tsconfig.json"
+    },
+    "babelOpts": {}
+  },
+  "mochaOpts": {
+    "timeout": 10000
+  },
+  "jasmineOpts": {
+    "defaultTimeoutInterval": 10000
+  },
+  "cucumberOpts": {
+    "timeout": 300000,
+    "require": [
+      "./test/features/step-definitions/*.ts"
+    ],
+    "backtrace": false,
+    "requireModule": [],
+    "dryRun": false,
+    "failFast": false,
+    "snippets": true,
+    "source": true,
+    "strict": false,
+    "tagExpression": "@WebAdvansed",
+    "ignoreUndefinedDefinitions": false
+  },
+  "onPrepare": [],
+  "onWorkerStart": [],
+  "onWorkerEnd": [],
+  "before": [],
+  "beforeSession": [],
+  "beforeSuite": [],
+  "beforeHook": [],
+  "beforeTest": [],
+  "beforeCommand": [],
+  "afterCommand": [],
+  "afterTest": [],
+  "afterHook": [],
+  "afterSuite": [],
+  "afterSession": [],
+  "after": [],
+  "onComplete": [],
+  "onReload": [],
+  "beforeFeature": [],
+  "beforeScenario": [],
+  "beforeStep": [],
+  "afterStep": [],
+  "afterScenario": [],
+  "afterFeature": [],
+  "environment": "Test",
+  "sauceDemoURL": "https://www.saucedemo.com",
+  "_": [
+    "config/wdio.test.conf.ts"
+  ],
+  "cucumber-opts": {
+    "tagExpression": "@WebAdvansed"
+  },
+  "$0": "node_modules\\@wdio\\cli\\bin\\wdio.js",
+  "ignoredWorkerServices": []
+}

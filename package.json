@@ -5,9 +5,16 @@
     "main": "index.js",
     "scripts": {
         "IOofficialWebsite": "set HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@IOofficialWebsite'",
-        "WebAdvansed": "set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@WebAdvansed'"
+        
+        "test:WebAdvansed": "set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@WebAdvansed'",
+        "uat:WebAdvansed": "set HEADLESS=N && npx wdio config/wdio.uat.conf.ts --cucumberOpts.tagExpression='@WebAdvansed'"
     },
-    "keywords": [],
+    "keywords": [
+        "wdio",
+        "cucumber",
+        "e2e",
+        "tests"
+    ],
     "author": "Kalpesh",
     "license": "ISC",
     "devDependencies": {

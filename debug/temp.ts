@@ -9,4 +9,5 @@ let objB = {
 }
 
     objA= Object.assign(objA, objB)
+    
     console.log(`value of oject is: ${objA}`)
