@@ -8,15 +8,15 @@
   "logLevels": {},
   "excludeDriverLogs": [],
   "bail": 0,
-  "waitforInterval": 500,
-  "waitforTimeout": 10000,
+  "waitforInterval": 54354353453454354,
+  "waitforTimeout": 534535435353534453,
   "framework": "cucumber",
   "reporters": [
     "spec",
     [
       "allure",
       {
-        "outputDir": "allure-results"
+        "outputDir": "gffgddfgdgdgdgdgs"
       }
     ]
   ],
