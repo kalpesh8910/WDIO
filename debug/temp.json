@@ -1,7 +1,8 @@
 [
   {
     "userType": "StdUser",
-    "Username": "standard_user"
+    "Username": "standard_user",
+    "password": "password123"
   },
   {
     "userType": "ProdUser",
