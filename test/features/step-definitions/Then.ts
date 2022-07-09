@@ -4,6 +4,10 @@ import { expect } from "chai";
 
 Then(/^Inventory page should list (.*)$/, async function (numberOfproducts) {
  
+  console.log(`Then file step test id is:- ${this.testid}`);
+  
+  // console.log(`app id is:-${this.appid}`);
+
   if (!numberOfproducts)
     throw Error(`Invalid product count provided: ${numberOfproducts}`);
   await browser.pause(4000)

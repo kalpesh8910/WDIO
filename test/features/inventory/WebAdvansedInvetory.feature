@@ -1,7 +1,7 @@
 Feature: Advansed Web Interaction inventory
 
     @WebAdvansed
-    Scenario Outline: Demo Advansed Web interaction inventory
+    Scenario Outline: <TestId>: Demo Advansed Web interaction inventory
 
         # just a test manaase
         Given As a standard user I login to inventory web page

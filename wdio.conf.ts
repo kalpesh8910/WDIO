@@ -2,6 +2,7 @@
 import type { Options } from "@wdio/types";
 import {path} from 'app-root-path';
 import { config as configuration } from "dotenv";
+import ts = require("typescript");
 console.log("appRoot", path);
 configuration({ path: `${path}/.env` });
 // TODO: 
@@ -312,8 +313,18 @@ maxInstances: 5,
    * @param {ITestCaseHookParameter} world    world object containing information on pickle and test step
    * @param {Object}                 context  Cucumber World object
    */
-  // beforeScenario: function (world, context) {
-  // },
+   beforeScenario: function (world, context) {
+  
+   // console.log(`world is:${JSON.stringify(world)}`)
+    let arr = world.pickle.name.split(/:/)
+    
+    // @ts-ignore
+    if(arr.length >0) browser.config.testid = arr[0]
+
+    // @ts-ignore
+    if(!browser.config.testid) throw Error(`Error getting testid for current scenario:${world.pickle.name}`)
+
+  },
   /**
    *
    * Runs before a Cucumber Step.
@@ -334,14 +345,19 @@ maxInstances: 5,
    * @param {number}             result.duration  duration of scenario in milliseconds
    * @param {Object}             context          Cucumber World object
    */
-   afterStep: function (step, scenario, result, context) {
+   afterStep: async function (step, scenario, result, context) {
 
     console.log(`>> step: ${JSON.stringify(step)}`)
     console.log(`>> scenariop is: ${JSON.stringify(scenario)}`)
     console.log(`>> result is : ${JSON.stringify(result)}`)
     console.log(`>> context is: ${JSON.stringify(context)}`)
-    
 
+    // Take screenshot if test case is failed
+
+    if(!result.passed){
+      await browser.takeScreenshot()
+
+    }
    },
   /**
    *

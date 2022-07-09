@@ -8,6 +8,11 @@ import { expect } from "chai";
 
 Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (prefixText, userType, dataTable) {
   
+  // Get the testid
+
+  console.log(`given step test id is:- ${this.testid}`);
+
+
   // Getting values from data table
   let dt = dataTable.hashes()
 
@@ -40,6 +45,8 @@ Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (pre
     await browser.pause(2000);
     await $(`#login-button`).click();
     await browser.pause(2000);
+
+    this.appid = "ABC123"
 
     //await browser.debug()
 /*

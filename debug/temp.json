@@ -1,19 +1,104 @@
-[
-  {
-    "userType": "StdUser",
-    "Username": "standard_user",
-    "password": "password123"
-  },
-  {
-    "userType": "ProdUser",
-    "Username": "locked_out_user"
-  },
-  {
-    "userType": "ProbUser",
-    "Username": "problem_use"
-  },
-  {
-    "userType": "PerfUser",
-    "Username": "performance_glitch_user"
-  }
-]
+{
+  "id": "0",
+  "uri": "C:\\Visual Studio\\documents\\workspace\\WDIO\\test\\features\\inventory\\WebAdvansedInvetory.feature",
+  "astNodeIds": [
+    "12",
+    "9"
+  ],
+  "name": "Demo Advansed Web interaction inventory",
+  "language": "en",
+  "steps": [
+    {
+      "id": "13",
+      "text": "As a standard user I login to inventory web page",
+      "type": "Context",
+      "argument": {
+        "dataTable": {
+          "rows": [
+            {
+              "cells": [
+                {
+                  "value": "userType"
+                },
+                {
+                  "value": "Username"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "StdUser"
+                },
+                {
+                  "value": "standard_user"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "ProdUser"
+                },
+                {
+                  "value": "locked_out_user"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "ProbUser"
+                },
+                {
+                  "value": "problem_use"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "PerfUser"
+                },
+                {
+                  "value": "performance_glitch_user"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "astNodeIds": [
+        "5",
+        "9"
+      ],
+      "keyword": "Given "
+    },
+    {
+      "id": "14",
+      "text": "Inventory page should list 6",
+      "type": "Outcome",
+      "astNodeIds": [
+        "6",
+        "9"
+      ],
+      "keyword": "Then "
+    },
+    {
+      "id": "15",
+      "text": "Validate all products have valid price",
+      "type": "Outcome",
+      "astNodeIds": [
+        "7",
+        "9"
+      ],
+      "keyword": "Then "
+    }
+  ],
+  "tags": [
+    {
+      "name": "@WebAdvansed",
+      "astNodeId": "11"
+    }
+  ]
+}
