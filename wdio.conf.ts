@@ -334,8 +334,15 @@ maxInstances: 5,
    * @param {number}             result.duration  duration of scenario in milliseconds
    * @param {Object}             context          Cucumber World object
    */
-  // afterStep: function (step, scenario, result, context) {
-  // },
+   afterStep: function (step, scenario, result, context) {
+
+    console.log(`>> step: ${JSON.stringify(step)}`)
+    console.log(`>> scenariop is: ${JSON.stringify(scenario)}`)
+    console.log(`>> result is : ${JSON.stringify(result)}`)
+    console.log(`>> context is: ${JSON.stringify(context)}`)
+    
+
+   },
   /**
    *
    * Runs after a Cucumber Scenario.

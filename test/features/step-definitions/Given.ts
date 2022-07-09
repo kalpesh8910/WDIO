@@ -6,7 +6,15 @@ import { expect } from "chai";
  console.log("appRoot", path);
  configuration({ path: `${path}/.env` });
 
-Given(/^login to inventory web page$/, async function () {
+Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (prefixText, userType, dataTable) {
+  
+  // Getting values from data table
+  let dt = dataTable.hashes()
+
+  console.log(`The type of the dt is: ${dt}`) // object
+  console.log(`The tyoe of dt is: ${dt.constructor}`) // array of function
+  console.log(`The value of dt is:- ${JSON.stringify(dt)}`)
+  console.log(`The user type is :- ${userType}`)
 
     // 1. Launch the browser
 
@@ -22,7 +30,8 @@ Given(/^login to inventory web page$/, async function () {
     console.log(`proces is:- ${process.env}`);
 
     console.log(`username is:- ${process.env.TEST_STD_USERNAME}`)
-    await $(`#user-name`).setValue(process.env.TEST_STD_USERNAME);
+    await $(`#user-name`).setValue(dt[0].Username);
+    //await $(`#user-name`).setValue(process.env.TEST_STD_USERNAME);
 
     await browser.pause(1000);
     

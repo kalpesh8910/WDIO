@@ -1,102 +1,104 @@
 {
-  "specs": [
-    "./test/features/**/*.feature"
+  "id": "0",
+  "uri": "C:\\Visual Studio\\documents\\workspace\\WDIO\\test\\features\\inventory\\WebAdvansedInvetory.feature",
+  "astNodeIds": [
+    "12",
+    "9"
   ],
-  "suites": {},
-  "exclude": [],
-  "logLevel": "info",
-  "logLevels": {},
-  "excludeDriverLogs": [],
-  "bail": 0,
-  "waitforInterval": 500,
-  "waitforTimeout": 10000,
-  "framework": "cucumber",
-  "reporters": [
-    "spec",
-    [
-      "allure",
-      {
-        "outputDir": "allure-results"
-      }
-    ]
-  ],
-  "services": [
-    "chromedriver"
-  ],
-  "maxInstances": 10,
-  "maxInstancesPerCapability": 100,
-  "filesToWatch": [],
-  "connectionRetryTimeout": 120000,
-  "connectionRetryCount": 3,
-  "execArgv": [],
-  "runnerEnv": {},
-  "runner": "local",
-  "specFileRetries": 0,
-  "specFileRetriesDelay": 0,
-  "specFileRetriesDeferred": false,
-  "reporterSyncInterval": 100,
-  "reporterSyncTimeout": 5000,
-  "cucumberFeaturesWithLineNumbers": [],
-  "autoCompileOpts": {
-    "autoCompile": true,
-    "tsNodeOpts": {
-      "transpileOnly": true,
-      "project": "tsconfig.json"
+  "name": "Demo Advansed Web interaction inventory",
+  "language": "en",
+  "steps": [
+    {
+      "id": "13",
+      "text": "As a standard user I login to inventory web page",
+      "type": "Context",
+      "argument": {
+        "dataTable": {
+          "rows": [
+            {
+              "cells": [
+                {
+                  "value": "userType"
+                },
+                {
+                  "value": "Username"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "StdUser"
+                },
+                {
+                  "value": "standard_user"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "ProdUser"
+                },
+                {
+                  "value": "locked_out_user"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "ProbUser"
+                },
+                {
+                  "value": "problem_use"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "PerfUser"
+                },
+                {
+                  "value": "performance_glitch_user"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "astNodeIds": [
+        "5",
+        "9"
+      ],
+      "keyword": "Given "
     },
-    "babelOpts": {}
-  },
-  "mochaOpts": {
-    "timeout": 10000
-  },
-  "jasmineOpts": {
-    "defaultTimeoutInterval": 10000
-  },
-  "cucumberOpts": {
-    "timeout": 300000,
-    "require": [
-      "./test/features/step-definitions/*.ts"
-    ],
-    "backtrace": false,
-    "requireModule": [],
-    "dryRun": false,
-    "failFast": false,
-    "snippets": true,
-    "source": true,
-    "strict": false,
-    "tagExpression": "@WebAdvansed",
-    "ignoreUndefinedDefinitions": false
-  },
-  "onPrepare": [],
-  "onWorkerStart": [],
-  "onWorkerEnd": [],
-  "before": [],
-  "beforeSession": [],
-  "beforeSuite": [],
-  "beforeHook": [],
-  "beforeTest": [],
-  "beforeCommand": [],
-  "afterCommand": [],
-  "afterTest": [],
-  "afterHook": [],
-  "afterSuite": [],
-  "afterSession": [],
-  "after": [],
-  "onComplete": [],
-  "onReload": [],
-  "beforeFeature": [],
-  "beforeScenario": [],
-  "beforeStep": [],
-  "afterStep": [],
-  "afterScenario": [],
-  "afterFeature": [],
-  "environment": "Test",
-  "sauceDemoURL": "https://www.saucedemo.com",
-  "_": [
-    "config/wdio.test.conf.ts"
+    {
+      "id": "14",
+      "text": "Inventory page should list 6",
+      "type": "Outcome",
+      "astNodeIds": [
+        "6",
+        "9"
+      ],
+      "keyword": "Then "
+    },
+    {
+      "id": "15",
+      "text": "Validate all products have valid price",
+      "type": "Outcome",
+      "astNodeIds": [
+        "7",
+        "9"
+      ],
+      "keyword": "Then "
+    }
   ],
-  "cucumber-opts": {
-    "tagExpression": "@WebAdvansed"
-  },
-  "$0": "node_modules\\@wdio\\cli\\bin\\wdio.js",
-  "ignoredWorkerServices": []
+  "tags": [
+    {
+      "name": "@WebAdvansed",
+      "astNodeId": "11"
+    }
+  ]
 }
