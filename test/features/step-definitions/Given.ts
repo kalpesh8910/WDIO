@@ -1,5 +1,7 @@
 import { Given } from "@wdio/cucumber-framework";
 import { expect } from "chai";
+import logger from "../../helper/logger";
+import {format, createLogger, transports, info, Logger } from "winston"
 
  import {path} from 'app-root-path';
  import {config as configuration} from "dotenv";
@@ -8,6 +10,7 @@ import { expect } from "chai";
 
 Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (prefixText, userType, dataTable) {
   
+  logger.info(`${this.testid}:Started to login sause demo website.`)
   // Get the testid
 
   console.log(`given step test id is:- ${this.testid}`);

@@ -1,9 +1,12 @@
 import { Then } from "@wdio/cucumber-framework";
 import { expect } from "chai";
+import logger from "../../helper/logger"; 
+import {format, createLogger, transports, info, Logger } from "winston"
 
 
 Then(/^Inventory page should list (.*)$/, async function (numberOfproducts) {
  
+ // throw Error (` error is:()`)
   console.log(`Then file step test id is:- ${this.testid}`);
   
   // console.log(`app id is:-${this.appid}`);
@@ -31,7 +34,7 @@ Steps:-
 
 
 Then(/^Validate all products have valid price$/, async function(){
-
+  logger.info(`${this.testid}: Checking the price.`)
   // Step1. Get the price list
   let eleArr = await $$(`.inventory_item_price`)
   let priceStrArr = []

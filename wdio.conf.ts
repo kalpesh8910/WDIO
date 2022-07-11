@@ -1,18 +1,23 @@
+// @ts-nocheck
 
 import type { Options } from "@wdio/types";
-import {path} from 'app-root-path';
+import { path } from "app-root-path";
 import { config as configuration } from "dotenv";
+import fs from "fs";
+
 import ts = require("typescript");
 console.log("appRoot", path);
 configuration({ path: `${path}/.env` });
-// TODO: 
+import allure from "@wdio/allure-reporter";
+
+// TODO:
 // 1. import dotenv
 // 2. det config path
 
 let headless = process.env.HEADLESS;
 let debug = process.env.DEBUG;
 
-console.log(`value of the headless: ${headless}`)
+console.log(`value of the headless: ${headless}`);
 
 export const config: Options.Testrunner = {
   //
@@ -96,7 +101,7 @@ export const config: Options.Testrunner = {
       // grid with only 5 firefox instances available you can make sure that not more than
       // 5 instances get started at a time.
 
-/*
+      /*
       => Configuring tests in headless mode:-
           1. Add these flags as chrome options
 	            1. --headless
@@ -111,15 +116,23 @@ export const config: Options.Testrunner = {
           3. Make use of process.env obj to set headless flag
   
 */
-maxInstances: 5,
+      maxInstances: 5,
       //
       browserName: "chrome",
       "goog:chromeOptions": {
-        args: headless.toUpperCase()=="Y" ? ["--disable-web-security", "--headless", "--disable-dev-shm-usage", "--no-sandbox", 
-        "--window-size=1920,1080"] : []
+        args:
+          headless.toUpperCase() == "Y"
+            ? [
+                "--disable-web-security",
+                "--headless",
+                "--disable-dev-shm-usage",
+                "--no-sandbox",
+                "--window-size=1920,1080",
+              ]
+            : [],
       },
       acceptInsecureCerts: true,
-      timeouts: { implicit:10000, pageLoad: 20000, script: 30000},
+      timeouts: { implicit: 10000, pageLoad: 20000, script: 30000 },
       // If outputDir is provided WebdriverIO can capture driver session logs
       // it is possible to configure which logTypes to include/exclude.
       // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
@@ -133,8 +146,8 @@ maxInstances: 5,
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: debug.toUpperCase() === "Y" ? 'info': 'error',
-  
+  logLevel: debug.toUpperCase() === "Y" ? "info" : "error",
+
   //
   // Set specific log levels per logger
   // loggers:
@@ -158,13 +171,13 @@ maxInstances: 5,
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  
+
   // baseUrl: "https://admin:admin@the-internet.herokuapp.com",
   // baseUrl: "https://the-internet.herokuapp.com",
   // baseUrl: "https://www.amazon.com",
   // baseUrl: "https://www.saucedemo.com/",
   // baseUrl: "http://localhost",
- 
+
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
@@ -202,7 +215,17 @@ maxInstances: 5,
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
-  reporters: ["spec", ["allure", { outputDir: "allure-results" }]],
+  reporters: [
+    "spec",
+    [
+      "allure",
+      {
+        outputDir: "allure-results",
+        disableWebdriverStepsReporting: true,
+        useCucumberStepReporter: true,
+      },
+    ],
+  ],
 
   //
   // If you are using Cucumber you need to specify the location of your step definitions.
@@ -224,19 +247,19 @@ maxInstances: 5,
     // <boolean> fail if there are any undefined or pending steps
     strict: false,
     // <string> (expression) only execute the features or scenarios with tags matching the expression
-    
+
     // tagExpression: "@demo",
-       tagExpression: "",
+    tagExpression: "",
     // tagExpression: "@WebTable",
     // tagExpression: "@AdvancedScrolling",
     // tagExpression: "@IOofficialWebsite",
-    
+
     // <number> timeout for step definitions
     timeout: 300000,
     // <boolean> Enable this config to treat undefined definitions as warnings.
     ignoreUndefinedDefinitions: false,
   },
-  
+
   //
   // =====
   // Hooks
@@ -250,8 +273,11 @@ maxInstances: 5,
    * @param {Object} config wdio configuration object
    * @param {Array.<Object>} capabilities list of capabilities details
    */
-  // onPrepare: function (config, capabilities) {
-  // },
+  onPrepare: function (config, capabilities) {
+    if (process.env.RUNNER === "LOCAL" && fs.existSync("./allure-results")) {
+      fs.rmdirSync("./allure-results", { recursive: true });
+    }
+  },
   /**
    * Gets executed before a worker process is spawned and can be used to initialise specific service
    * for that worker as well as modify runtime environments in an async fashion.
@@ -313,17 +339,18 @@ maxInstances: 5,
    * @param {ITestCaseHookParameter} world    world object containing information on pickle and test step
    * @param {Object}                 context  Cucumber World object
    */
-   beforeScenario: function (world, context) {
-  
-   // console.log(`world is:${JSON.stringify(world)}`)
-    let arr = world.pickle.name.split(/:/)
-    
-    // @ts-ignore
-    if(arr.length >0) browser.config.testid = arr[0]
+  beforeScenario: function (world, context) {
+    // console.log(`world is:${JSON.stringify(world)}`)
+    let arr = world.pickle.name.split(/:/);
 
     // @ts-ignore
-    if(!browser.config.testid) throw Error(`Error getting testid for current scenario:${world.pickle.name}`)
+    if (arr.length > 0) browser.config.testid = arr[0];
 
+    // @ts-ignore
+    if (!browser.config.testid)
+      throw Error(
+        `Error getting testid for current scenario:${world.pickle.name}`
+      );
   },
   /**
    *
@@ -345,20 +372,18 @@ maxInstances: 5,
    * @param {number}             result.duration  duration of scenario in milliseconds
    * @param {Object}             context          Cucumber World object
    */
-   afterStep: async function (step, scenario, result, context) {
-
-    console.log(`>> step: ${JSON.stringify(step)}`)
-    console.log(`>> scenariop is: ${JSON.stringify(scenario)}`)
-    console.log(`>> result is : ${JSON.stringify(result)}`)
-    console.log(`>> context is: ${JSON.stringify(context)}`)
+  afterStep: async function (step, scenario, result, context) {
+    console.log(`>> step: ${JSON.stringify(step)}`);
+    console.log(`>> scenariop is: ${JSON.stringify(scenario)}`);
+    console.log(`>> result is : ${JSON.stringify(result)}`);
+    console.log(`>> context is: ${JSON.stringify(context)}`);
 
     // Take screenshot if test case is failed
 
-    if(!result.passed){
-      await browser.takeScreenshot()
-
+    if (!result.passed) {
+      await browser.takeScreenshot();
     }
-   },
+  },
   /**
    *
    * Runs after a Cucumber Scenario.
@@ -377,8 +402,12 @@ maxInstances: 5,
    * @param {String}                   uri      path to feature file
    * @param {GherkinDocument.IFeature} feature  Cucumber feature object
    */
-  // afterFeature: function (uri, feature) {
-  // },
+  afterFeature: function (uri, feature) {
+    // Add more environment details
+
+    allure.addEnvironment("Environment", browser.config.environment);
+    allure.addEnvironment("Middleware", "Dev environment");
+  },
 
   /**
    * Runs after a WebdriverIO command gets executed
