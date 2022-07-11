@@ -1,58 +1,58 @@
 appRoot E:\Visual Studio\documents\workspace\WDIO
 value of the headless: N 
 
-Execution of 6 workers started at 2022-07-11T10:08:05.198Z
+Execution of 6 workers started at 2022-07-11T12:12:31.403Z
 
-2022-07-11T10:08:05.313Z INFO @wdio/cli:launcher: Run onPrepare hook
-2022-07-11T10:08:05.330Z INFO chromedriver: Start Chromedriver (E:\Visual Studio\documents\workspace\WDIO\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
-2022-07-11T10:08:05.483Z INFO chromedriver: Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 9515
-2022-07-11T10:08:05.484Z INFO chromedriver: Only local connections are allowed.
-2022-07-11T10:08:05.485Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-2022-07-11T10:08:05.499Z INFO chromedriver: ChromeDriver was started successfully.
-2022-07-11T10:08:05.614Z INFO @wdio/cli:launcher: Run onWorkerStart hook
-2022-07-11T10:08:05.615Z INFO @wdio/cli:launcher: Run onWorkerStart hook
-2022-07-11T10:08:05.615Z INFO @wdio/cli:launcher: Run onWorkerStart hook
-2022-07-11T10:08:05.616Z INFO @wdio/cli:launcher: Run onWorkerStart hook
-2022-07-11T10:08:05.616Z INFO @wdio/cli:launcher: Run onWorkerStart hook
-2022-07-11T10:08:05.620Z INFO @wdio/local-runner: Start worker 0-0 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
-2022-07-11T10:08:05.637Z INFO @wdio/local-runner: Start worker 0-1 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
-2022-07-11T10:08:05.654Z INFO @wdio/local-runner: Start worker 0-2 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
-2022-07-11T10:08:05.668Z INFO @wdio/local-runner: Start worker 0-3 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
-2022-07-11T10:08:05.683Z INFO @wdio/local-runner: Start worker 0-4 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
-[0-3] [90m2022-07-11T10:08:07.454Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
-[0-1] [90m2022-07-11T10:08:07.545Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
-[0-4] [90m2022-07-11T10:08:07.545Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
-[0-0] [90m2022-07-11T10:08:07.614Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
-[0-2] [90m2022-07-11T10:08:07.646Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
-[0-3] appRoot E:\Visual Studio\documents\workspace\WDIO
-[0-4] appRoot E:\Visual Studio\documents\workspace\WDIO
-[0-1] appRoot E:\Visual Studio\documents\workspace\WDIO
+2022-07-11T12:12:31.499Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-07-11T12:12:31.518Z INFO chromedriver: Start Chromedriver (E:\Visual Studio\documents\workspace\WDIO\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2022-07-11T12:12:31.575Z INFO chromedriver: Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 9515
+2022-07-11T12:12:31.576Z INFO chromedriver: Only local connections are allowed.
+2022-07-11T12:12:31.577Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+2022-07-11T12:12:31.585Z INFO chromedriver: ChromeDriver was started successfully.
+2022-07-11T12:12:31.663Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-07-11T12:12:31.664Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-07-11T12:12:31.664Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-07-11T12:12:31.665Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-07-11T12:12:31.665Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-07-11T12:12:31.668Z INFO @wdio/local-runner: Start worker 0-0 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
+2022-07-11T12:12:31.689Z INFO @wdio/local-runner: Start worker 0-1 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
+2022-07-11T12:12:31.705Z INFO @wdio/local-runner: Start worker 0-2 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
+2022-07-11T12:12:31.723Z INFO @wdio/local-runner: Start worker 0-3 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
+2022-07-11T12:12:31.736Z INFO @wdio/local-runner: Start worker 0-4 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
+[0-2] [90m2022-07-11T12:12:33.474Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
+[0-1] [90m2022-07-11T12:12:33.538Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
+[0-4] [90m2022-07-11T12:12:33.569Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
+[0-0] [90m2022-07-11T12:12:33.602Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
+[0-3] [90m2022-07-11T12:12:33.603Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
 [0-2] appRoot E:\Visual Studio\documents\workspace\WDIO
+[0-1] appRoot E:\Visual Studio\documents\workspace\WDIO
+[0-4] appRoot E:\Visual Studio\documents\workspace\WDIO
 [0-0] appRoot E:\Visual Studio\documents\workspace\WDIO
-[0-4] value of the headless: N 
-[0-3] value of the headless: N 
-[0-2] value of the headless: N 
+[0-3] appRoot E:\Visual Studio\documents\workspace\WDIO
 [0-1] value of the headless: N 
+[0-4] value of the headless: N 
+[0-2] value of the headless: N 
 [0-0] value of the headless: N 
-2022-07-11T10:08:11.666Z INFO @wdio/cli: [0-4] SKIPPED in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\demo\WebTable.feature
-2022-07-11T10:08:11.666Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
-2022-07-11T10:08:11.667Z INFO @wdio/cli:launcher: Run onWorkerStart hook
-2022-07-11T10:08:11.670Z INFO @wdio/local-runner: Start worker 0-5 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
-2022-07-11T10:08:11.785Z INFO @wdio/cli: [0-2] SKIPPED in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\demo\demo.feature
-2022-07-11T10:08:11.785Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
-2022-07-11T10:08:11.787Z INFO @wdio/cli: [0-3] SKIPPED in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\demo\WebInteraction.feature
-2022-07-11T10:08:11.787Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
-2022-07-11T10:08:11.890Z INFO @wdio/cli: [0-1] SKIPPED in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\demo\CucumberDemo.feature
-2022-07-11T10:08:11.890Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
-2022-07-11T10:08:12.035Z INFO @wdio/cli: [0-0] SKIPPED in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\demo\AdvancedScrolling.feature
-2022-07-11T10:08:12.035Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
-[0-5] [90m2022-07-11T10:08:13.023Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
+[0-3] value of the headless: N 
+2022-07-11T12:12:37.092Z INFO @wdio/cli: [0-4] SKIPPED in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\demo\WebTable.feature
+2022-07-11T12:12:37.092Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-07-11T12:12:37.093Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-07-11T12:12:37.095Z INFO @wdio/local-runner: Start worker 0-5 with arg: config/wdio.test.conf.ts,--cucumberOpts.tagExpression='@WebAdvansed'
+2022-07-11T12:12:37.137Z INFO @wdio/cli: [0-0] SKIPPED in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\demo\AdvancedScrolling.feature
+2022-07-11T12:12:37.137Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-07-11T12:12:37.162Z INFO @wdio/cli: [0-1] SKIPPED in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\demo\CucumberDemo.feature
+2022-07-11T12:12:37.162Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-07-11T12:12:37.222Z INFO @wdio/cli: [0-2] SKIPPED in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\demo\demo.feature
+2022-07-11T12:12:37.222Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-07-11T12:12:37.285Z INFO @wdio/cli: [0-3] SKIPPED in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\demo\WebInteraction.feature
+2022-07-11T12:12:37.285Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+[0-5] [90m2022-07-11T12:12:38.089Z[39m [96mINFO[39m [97m@wdio/local-runner[39m: Run worker command: run
 [0-5] appRoot E:\Visual Studio\documents\workspace\WDIO
 [0-5] value of the headless: N 
 [0-5] RUNNING in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\inventory\WebAdvansedInvetory.feature
-[0-5] [90m2022-07-11T10:08:14.995Z[39m [96mINFO[39m [97mwebdriver[39m: Initiate new session using the WebDriver protocol
-[0-5] [90m2022-07-11T10:08:15.159Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session
-[0-5] [90m2022-07-11T10:08:15.159Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
+[0-5] [90m2022-07-11T12:12:39.972Z[39m [96mINFO[39m [97mwebdriver[39m: Initiate new session using the WebDriver protocol
+[0-5] [90m2022-07-11T12:12:40.082Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session
+[0-5] [90m2022-07-11T12:12:40.083Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m {
 [0-5]   capabilities: {
 [0-5]     alwaysMatch: {
 [0-5]       browserName: 'chrome',
@@ -75,140 +75,140 @@ Execution of 6 workers started at 2022-07-11T10:08:05.198Z
 [0-5] The tyoe of dt is: function Array() { [native code] }
 [0-5] The value of dt is:- [{"userType":"StdUser","Username":"standard_user"},{"userType":"ProdUser","Username":"locked_out_user"},{"userType":"ProbUser","Username":"problem_use"},{"userType":"PerfUser","Username":"performance_glitch_user"}]
 [0-5] The user type is :- standard
-[0-5] [90m2022-07-11T10:08:17.753Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m navigateTo("https://www.saucedemo.com/")
-[0-5] [90m2022-07-11T10:08:17.754Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/url
-[0-5] [90m2022-07-11T10:08:17.754Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { url: 'https://www.saucedemo.com/' }
+[0-5] [90m2022-07-11T12:12:42.632Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m navigateTo("https://www.saucedemo.com/")
+[0-5] [90m2022-07-11T12:12:42.633Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/url
+[0-5] [90m2022-07-11T12:12:42.634Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { url: 'https://www.saucedemo.com/' }
 [0-5] Test config values: {"specs":["./test/features/**/*.feature"],"suites":{},"exclude":[],"logLevel":"info","logLevels":{},"excludeDriverLogs":[],"bail":0,"waitforInterval":500,"waitforTimeout":10000,"framework":"cucumber","reporters":["spec",["allure",{"outputDir":"allure-results","disableWebdriverStepsReporting":true,"useCucumberStepReporter":true}]],"services":["chromedriver"],"maxInstances":10,"maxInstancesPerCapability":100,"filesToWatch":[],"connectionRetryTimeout":120000,"connectionRetryCount":3,"execArgv":[],"runnerEnv":{},"runner":"local","specFileRetries":0,"specFileRetriesDelay":0,"specFileRetriesDeferred":false,"reporterSyncInterval":100,"reporterSyncTimeout":5000,"cucumberFeaturesWithLineNumbers":[],"autoCompileOpts":{"autoCompile":true,"tsNodeOpts":{"transpileOnly":true,"project":"tsconfig.json"},"babelOpts":{}},"mochaOpts":{"timeout":10000},"jasmineOpts":{"defaultTimeoutInterval":10000},"cucumberOpts":{"timeout":300000,"require":["./test/features/step-definitions/*.ts"],"backtrace":false,"requireModule":[],"dryRun":false,"failFast":false,"snippets":true,"source":true,"strict":false,"tagExpression":"@WebAdvansed","ignoreUndefinedDefinitions":false},"onPrepare":[null],"onWorkerStart":[],"onWorkerEnd":[],"before":[],"beforeSession":[],"beforeSuite":[],"beforeHook":[],"beforeTest":[],"beforeCommand":[],"afterCommand":[],"afterTest":[],"afterHook":[],"afterSuite":[],"afterSession":[],"after":[],"onComplete":[],"onReload":[],"beforeFeature":[],"beforeScenario":[null],"beforeStep":[],"afterStep":[null],"afterScenario":[],"afterFeature":[null],"environment":"TEST","sauceDemoURL":"https://www.saucedemo.com","_":["config/wdio.test.conf.ts"],"cucumber-opts":{"tagExpression":"@WebAdvansed"},"$0":"node_modules\\@wdio\\cli\\bin\\wdio.js","ignoredWorkerServices":[],"testid":"INT_TC001"}
-[0-5] [90m2022-07-11T10:08:18.427Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m setTimeouts(15000, 10000, undefined)
-[0-5] [90m2022-07-11T10:08:18.428Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/timeouts
-[0-5] [90m2022-07-11T10:08:18.429Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { implicit: 15000, pageLoad: 10000 }
-[0-5] [90m2022-07-11T10:08:18.436Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m maximizeWindow()
-[0-5] [90m2022-07-11T10:08:18.437Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/window/maximize
-[0-5] [90m2022-07-11T10:08:18.584Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m { height: 744, width: 1382, x: -8, y: -8 }
+[0-5] [90m2022-07-11T12:12:43.914Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m setTimeouts(15000, 10000, undefined)
+[0-5] [90m2022-07-11T12:12:43.915Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/timeouts
+[0-5] [90m2022-07-11T12:12:43.916Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { implicit: 15000, pageLoad: 10000 }
+[0-5] [90m2022-07-11T12:12:43.923Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m maximizeWindow()
+[0-5] [90m2022-07-11T12:12:43.923Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/window/maximize
+[0-5] [90m2022-07-11T12:12:44.090Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m { height: 744, width: 1382, x: -8, y: -8 }
 [0-5] proces is:- [object Object]
 [0-5] username is:- standard_user
-[0-5] [90m2022-07-11T10:08:21.591Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElement("css selector", "#user-name")
-[0-5] [90m2022-07-11T10:08:21.592Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element
-[0-5] [90m2022-07-11T10:08:21.592Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '#user-name' }
-[0-5] [90m2022-07-11T10:08:21.617Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m {
-[0-5]   'element-6066-11e4-a52e-4f735466cecf': '68ba8749-627c-437d-81b7-eba2e43831b3'
+[0-5] [90m2022-07-11T12:12:47.125Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElement("css selector", "#user-name")
+[0-5] [90m2022-07-11T12:12:47.126Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element
+[0-5] [90m2022-07-11T12:12:47.126Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '#user-name' }
+[0-5] [90m2022-07-11T12:12:47.175Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m {
+[0-5]   'element-6066-11e4-a52e-4f735466cecf': 'bb678dad-aa35-4217-ad0c-cbfbd724a9b3'
 [0-5] }
-[0-5] [90m2022-07-11T10:08:21.626Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementClear("68ba8749-627c-437d-81b7-eba2e43831b3")
-[0-5] [90m2022-07-11T10:08:21.626Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element/68ba8749-627c-437d-81b7-eba2e43831b3/clear
-[0-5] [90m2022-07-11T10:08:21.739Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementSendKeys("68ba8749-627c-437d-81b7-eba2e43831b3", "standard_user")
-[0-5] [90m2022-07-11T10:08:21.740Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element/68ba8749-627c-437d-81b7-eba2e43831b3/value
-[0-5] [90m2022-07-11T10:08:21.740Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { text: 'standard_user' }
+[0-5] [90m2022-07-11T12:12:47.187Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementClear("bb678dad-aa35-4217-ad0c-cbfbd724a9b3")
+[0-5] [90m2022-07-11T12:12:47.188Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element/bb678dad-aa35-4217-ad0c-cbfbd724a9b3/clear
+[0-5] [90m2022-07-11T12:12:47.272Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementSendKeys("bb678dad-aa35-4217-ad0c-cbfbd724a9b3", "standard_user")
+[0-5] [90m2022-07-11T12:12:47.272Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element/bb678dad-aa35-4217-ad0c-cbfbd724a9b3/value
+[0-5] [90m2022-07-11T12:12:47.272Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { text: 'standard_user' }
 [0-5] password is:- secret_sauce
-[0-5] [90m2022-07-11T10:08:22.879Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElement("css selector", "#password")
-[0-5] [90m2022-07-11T10:08:22.880Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element
-[0-5] [90m2022-07-11T10:08:22.880Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '#password' }
-[0-5] [90m2022-07-11T10:08:22.906Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m {
-[0-5]   'element-6066-11e4-a52e-4f735466cecf': 'bcb429db-07aa-44cd-a44e-0b7ee4f56b7d'
+[0-5] [90m2022-07-11T12:12:48.410Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElement("css selector", "#password")
+[0-5] [90m2022-07-11T12:12:48.411Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element
+[0-5] [90m2022-07-11T12:12:48.411Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '#password' }
+[0-5] [90m2022-07-11T12:12:48.434Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m {
+[0-5]   'element-6066-11e4-a52e-4f735466cecf': '5fae2cc6-51b5-443f-a87a-e2c840f13971'
 [0-5] }
-[0-5] [90m2022-07-11T10:08:22.913Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementClear("bcb429db-07aa-44cd-a44e-0b7ee4f56b7d")
-[0-5] [90m2022-07-11T10:08:22.914Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element/bcb429db-07aa-44cd-a44e-0b7ee4f56b7d/clear
-[0-5] [90m2022-07-11T10:08:23.016Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementSendKeys("bcb429db-07aa-44cd-a44e-0b7ee4f56b7d", "secret_sauce")
-[0-5] [90m2022-07-11T10:08:23.017Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element/bcb429db-07aa-44cd-a44e-0b7ee4f56b7d/value
-[0-5] [90m2022-07-11T10:08:23.017Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { text: 'secret_sauce' }
-[0-5] [90m2022-07-11T10:08:25.133Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElement("css selector", "#login-button")
-[0-5] [90m2022-07-11T10:08:25.134Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element
-[0-5] [90m2022-07-11T10:08:25.134Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '#login-button' }
-[0-5] [90m2022-07-11T10:08:25.155Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m {
-[0-5]   'element-6066-11e4-a52e-4f735466cecf': 'd2086657-7880-4650-8628-07599d256b0d'
+[0-5] [90m2022-07-11T12:12:48.440Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementClear("5fae2cc6-51b5-443f-a87a-e2c840f13971")
+[0-5] [90m2022-07-11T12:12:48.440Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element/5fae2cc6-51b5-443f-a87a-e2c840f13971/clear
+[0-5] [90m2022-07-11T12:12:48.512Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementSendKeys("5fae2cc6-51b5-443f-a87a-e2c840f13971", "secret_sauce")
+[0-5] [90m2022-07-11T12:12:48.513Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element/5fae2cc6-51b5-443f-a87a-e2c840f13971/value
+[0-5] [90m2022-07-11T12:12:48.513Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { text: 'secret_sauce' }
+[0-5] [90m2022-07-11T12:12:50.630Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElement("css selector", "#login-button")
+[0-5] [90m2022-07-11T12:12:50.630Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element
+[0-5] [90m2022-07-11T12:12:50.630Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '#login-button' }
+[0-5] [90m2022-07-11T12:12:50.656Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m {
+[0-5]   'element-6066-11e4-a52e-4f735466cecf': '2524f3df-c7d6-4128-8a43-6952657634da'
 [0-5] }
-[0-5] [90m2022-07-11T10:08:25.159Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementClick("d2086657-7880-4650-8628-07599d256b0d")
-[0-5] [90m2022-07-11T10:08:25.159Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element/d2086657-7880-4650-8628-07599d256b0d/click
+[0-5] [90m2022-07-11T12:12:50.660Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m elementClick("2524f3df-c7d6-4128-8a43-6952657634da")
+[0-5] [90m2022-07-11T12:12:50.660Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element/2524f3df-c7d6-4128-8a43-6952657634da/click
 [0-5] >> step: {"id":"13","text":"As a standard user I login to inventory web page","type":"Context","argument":{"dataTable":{"rows":[{"cells":[{"value":"userType"},{"value":"Username"}]},{"cells":[{"value":"StdUser"},{"value":"standard_user"}]},{"cells":[{"value":"ProdUser"},{"value":"locked_out_user"}]},{"cells":[{"value":"ProbUser"},{"value":"problem_use"}]},{"cells":[{"value":"PerfUser"},{"value":"performance_glitch_user"}]}]}},"astNodeIds":["5","9"],"keyword":"Given "}
-[0-5] >> scenariop is: {"id":"0","uri":"E:\\Visual Studio\\documents\\workspace\\WDIO\\test\\features\\inventory\\WebAdvansedInvetory.feature","astNodeIds":["12","9"],"name":"INT_TC001: Demo Advansed Web interaction inventory","language":"en","steps":[{"id":"13","text":"As a standard user I login to inventory web page","type":"Context","argument":{"dataTable":{"rows":[{"cells":[{"value":"userType"},{"value":"Username"}]},{"cells":[{"value":"StdUser"},{"value":"standard_user"}]},{"cells":[{"value":"ProdUser"},{"value":"locked_out_user"}]},{"cells":[{"value":"ProbUser"},{"value":"problem_use"}]},{"cells":[{"value":"PerfUser"},{"value":"performance_glitch_user"}]}]}},"astNodeIds":["5","9"],"keyword":"Given "},{"id":"14","text":"Inventory page should list 6","type":"Outcome","astNodeIds":["6","9"],"keyword":"Then "},{"id":"15","text":"Validate all products have valid price","type":"Outcome","astNodeIds":["7","9"],"keyword":"Then "}],"tags":[{"name":"@WebAdvansed","astNodeId":"11"}]}
-[0-5] >> result is : {"passed":true,"duration":622.3664}
+[0-5] >> scenariop is: {"id":"0","uri":"E:\\Visual Studio\\documents\\workspace\\WDIO\\test\\features\\inventory\\WebAdvansedInvetory.feature","astNodeIds":["12","9"],"name":"INT_TC001: Demo Advansed Web interaction inventory","language":"en","steps":[{"id":"13","text":"As a standard user I login to inventory web page","type":"Context","argument":{"dataTable":{"rows":[{"cells":[{"value":"userType"},{"value":"Username"}]},{"cells":[{"value":"StdUser"},{"value":"standard_user"}]},{"cells":[{"value":"ProdUser"},{"value":"locked_out_user"}]},{"cells":[{"value":"ProbUser"},{"value":"problem_use"}]},{"cells":[{"value":"PerfUser"},{"value":"performance_glitch_user"}]}]}},"astNodeIds":["5","9"],"keyword":"Given "},{"id":"14","text":"Inventory page should list 9","type":"Outcome","astNodeIds":["6","9"],"keyword":"Then "},{"id":"15","text":"Validate all products have valid price","type":"Outcome","astNodeIds":["7","9"],"keyword":"Then "}],"tags":[{"name":"@WebAdvansed","astNodeId":"11"}]}
+[0-5] >> result is : {"passed":true,"duration":252.8305}
 [0-5] >> context is: {"wdioRetries":0,"testid":"INT_TC001","appid":"ABC123"}
 [0-5] Then file step test id is:- INT_TC001
-[0-5] [90m2022-07-11T10:08:31.380Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElements("css selector", ".inventory_item_name")
-[0-5] [90m2022-07-11T10:08:31.381Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/elements
-[0-5] [90m2022-07-11T10:08:31.381Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '.inventory_item_name' }
-[0-5] [90m2022-07-11T10:08:31.434Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m [
+[0-5] [90m2022-07-11T12:12:56.896Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElements("css selector", ".inventory_item_name")
+[0-5] [90m2022-07-11T12:12:56.897Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/elements
+[0-5] [90m2022-07-11T12:12:56.897Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '.inventory_item_name' }
+[0-5] [90m2022-07-11T12:12:56.971Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m [
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'a687ecba-2786-481c-87ee-4dffd2c54415'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'fa9d83bc-c72d-40eb-818c-04ed28cac9aa'
 [0-5]   },
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': '23b41ecf-bf7c-4449-843b-d1b35242887d'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': '5b588c68-f95a-47d0-945e-23ac09faec56'
 [0-5]   },
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'f2e8022b-a126-4ff1-8b16-206af8275cf5'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': '0625a00d-3545-4fcf-9c1e-2f6a4275532d'
 [0-5]   },
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': '023b03e0-5c07-49cb-82ad-74782fd6c40f'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'b8286694-2980-49cc-84e5-df5db78b8a2c'
 [0-5]   },
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': '996ce92b-e0c0-40db-8df3-9bed3d4ccca7'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'a2c76669-5e67-42a4-b733-8eed558d1282'
 [0-5]   },
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'c041bc69-e7d2-4d58-9e25-5f72f00243e1'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'ff57090d-704f-4414-9b26-4a29802c9925'
 [0-5]   }
 [0-5] ]
 [0-5] 6
 [0-5] Test cases exceuted sucessfully...
-[0-5] >> step: {"id":"14","text":"Inventory page should list 6","type":"Outcome","astNodeIds":["6","9"],"keyword":"Then "}
-[0-5] >> scenariop is: {"id":"0","uri":"E:\\Visual Studio\\documents\\workspace\\WDIO\\test\\features\\inventory\\WebAdvansedInvetory.feature","astNodeIds":["12","9"],"name":"INT_TC001: Demo Advansed Web interaction inventory","language":"en","steps":[{"id":"13","text":"As a standard user I login to inventory web page","type":"Context","argument":{"dataTable":{"rows":[{"cells":[{"value":"userType"},{"value":"Username"}]},{"cells":[{"value":"StdUser"},{"value":"standard_user"}]},{"cells":[{"value":"ProdUser"},{"value":"locked_out_user"}]},{"cells":[{"value":"ProbUser"},{"value":"problem_use"}]},{"cells":[{"value":"PerfUser"},{"value":"performance_glitch_user"}]}]}},"astNodeIds":["5","9"],"keyword":"Given "},{"id":"14","text":"Inventory page should list 6","type":"Outcome","astNodeIds":["6","9"],"keyword":"Then "},{"id":"15","text":"Validate all products have valid price","type":"Outcome","astNodeIds":["7","9"],"keyword":"Then "}],"tags":[{"name":"@WebAdvansed","astNodeId":"11"}]}
-[0-5] >> result is : {"passed":true,"duration":96.4961}
+[0-5] >> step: {"id":"14","text":"Inventory page should list 9","type":"Outcome","astNodeIds":["6","9"],"keyword":"Then "}
+[0-5] >> scenariop is: {"id":"0","uri":"E:\\Visual Studio\\documents\\workspace\\WDIO\\test\\features\\inventory\\WebAdvansedInvetory.feature","astNodeIds":["12","9"],"name":"INT_TC001: Demo Advansed Web interaction inventory","language":"en","steps":[{"id":"13","text":"As a standard user I login to inventory web page","type":"Context","argument":{"dataTable":{"rows":[{"cells":[{"value":"userType"},{"value":"Username"}]},{"cells":[{"value":"StdUser"},{"value":"standard_user"}]},{"cells":[{"value":"ProdUser"},{"value":"locked_out_user"}]},{"cells":[{"value":"ProbUser"},{"value":"problem_use"}]},{"cells":[{"value":"PerfUser"},{"value":"performance_glitch_user"}]}]}},"astNodeIds":["5","9"],"keyword":"Given "},{"id":"14","text":"Inventory page should list 9","type":"Outcome","astNodeIds":["6","9"],"keyword":"Then "},{"id":"15","text":"Validate all products have valid price","type":"Outcome","astNodeIds":["7","9"],"keyword":"Then "}],"tags":[{"name":"@WebAdvansed","astNodeId":"11"}]}
+[0-5] >> result is : {"passed":true,"duration":162.8152}
 [0-5] >> context is: {"wdioRetries":0,"testid":"INT_TC001","appid":"ABC123"}
-[0-5] [90m2022-07-11T10:08:45.474Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElements("css selector", ".inventory_item_price")
-[0-5] [90m2022-07-11T10:08:45.475Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/elements
-[0-5] [90m2022-07-11T10:08:45.475Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '.inventory_item_price' }
-[0-5] [90m2022-07-11T10:08:45.498Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m [
+[0-5] [90m2022-07-11T12:13:11.048Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m findElements("css selector", ".inventory_item_price")
+[0-5] [90m2022-07-11T12:13:11.050Z[39m [96mINFO[39m [97mwebdriver[39m: [POST] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/elements
+[0-5] [90m2022-07-11T12:13:11.050Z[39m [96mINFO[39m [97mwebdriver[39m: [33mDATA[39m { using: 'css selector', value: '.inventory_item_price' }
+[0-5] [90m2022-07-11T12:13:11.142Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m [
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'd891f968-a4d9-4dd9-a2e7-3a33a96cc752'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'e124fbf5-bd4e-4829-a3a0-c3fddd2bdfc8'
 [0-5]   },
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'f8c7b43d-71a1-4385-9b0c-9e347e0d921c'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': '1ecb056b-d25e-404a-9514-572cdec17c35'
 [0-5]   },
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': '5ce372b5-3262-4d4a-8d30-344b4be3715f'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'b4d7744b-a431-4a85-8062-2fff647e15f8'
 [0-5]   },
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'b0991e58-8c32-4077-9b64-f32c0059681a'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': '7288198b-fc4e-413a-9d36-2f7b296b98d6'
 [0-5]   },
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'e44fb85f-e064-4748-a2bc-e97286c17061'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': '40093c47-e6e0-45c7-a525-75f3e585daa0'
 [0-5]   },
 [0-5]   {
-[0-5]     'element-6066-11e4-a52e-4f735466cecf': 'ec0f1286-0c75-4b5b-89f6-25f0af3ab239'
+[0-5]     'element-6066-11e4-a52e-4f735466cecf': '3702f1d8-83ac-4da2-bc6d-d2855c539c3e'
 [0-5]   }
 [0-5] ]
-[0-5] [90m2022-07-11T10:08:45.509Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("d891f968-a4d9-4dd9-a2e7-3a33a96cc752")
-[0-5] [90m2022-07-11T10:08:45.509Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element/d891f968-a4d9-4dd9-a2e7-3a33a96cc752/text
-[0-5] [90m2022-07-11T10:08:45.539Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $29.99
-[0-5] [90m2022-07-11T10:08:45.539Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("f8c7b43d-71a1-4385-9b0c-9e347e0d921c")
-[0-5] [90m2022-07-11T10:08:45.540Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element/f8c7b43d-71a1-4385-9b0c-9e347e0d921c/text
-[0-5] [90m2022-07-11T10:08:45.562Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $9.99
-[0-5] [90m2022-07-11T10:08:45.562Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("5ce372b5-3262-4d4a-8d30-344b4be3715f")
-[0-5] [90m2022-07-11T10:08:45.563Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element/5ce372b5-3262-4d4a-8d30-344b4be3715f/text
-[0-5] [90m2022-07-11T10:08:45.585Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $15.99
-[0-5] [90m2022-07-11T10:08:45.586Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("b0991e58-8c32-4077-9b64-f32c0059681a")
-[0-5] [90m2022-07-11T10:08:45.586Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element/b0991e58-8c32-4077-9b64-f32c0059681a/text
-[0-5] [90m2022-07-11T10:08:45.608Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $49.99
-[0-5] [90m2022-07-11T10:08:45.608Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("e44fb85f-e064-4748-a2bc-e97286c17061")
-[0-5] [90m2022-07-11T10:08:45.608Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element/e44fb85f-e064-4748-a2bc-e97286c17061/text
-[0-5] [90m2022-07-11T10:08:45.630Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $7.99
-[0-5] [90m2022-07-11T10:08:45.631Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("ec0f1286-0c75-4b5b-89f6-25f0af3ab239")
-[0-5] [90m2022-07-11T10:08:45.631Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b/element/ec0f1286-0c75-4b5b-89f6-25f0af3ab239/text
-[0-5] [90m2022-07-11T10:08:45.656Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $15.99
+[0-5] [90m2022-07-11T12:13:11.167Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("e124fbf5-bd4e-4829-a3a0-c3fddd2bdfc8")
+[0-5] [90m2022-07-11T12:13:11.168Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element/e124fbf5-bd4e-4829-a3a0-c3fddd2bdfc8/text
+[0-5] [90m2022-07-11T12:13:11.195Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $29.99
+[0-5] [90m2022-07-11T12:13:11.196Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("1ecb056b-d25e-404a-9514-572cdec17c35")
+[0-5] [90m2022-07-11T12:13:11.196Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element/1ecb056b-d25e-404a-9514-572cdec17c35/text
+[0-5] [90m2022-07-11T12:13:11.233Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $9.99
+[0-5] [90m2022-07-11T12:13:11.233Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("b4d7744b-a431-4a85-8062-2fff647e15f8")
+[0-5] [90m2022-07-11T12:13:11.234Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element/b4d7744b-a431-4a85-8062-2fff647e15f8/text
+[0-5] [90m2022-07-11T12:13:11.266Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $15.99
+[0-5] [90m2022-07-11T12:13:11.267Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("7288198b-fc4e-413a-9d36-2f7b296b98d6")
+[0-5] [90m2022-07-11T12:13:11.267Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element/7288198b-fc4e-413a-9d36-2f7b296b98d6/text
+[0-5] [90m2022-07-11T12:13:11.304Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $49.99
+[0-5] [90m2022-07-11T12:13:11.305Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("40093c47-e6e0-45c7-a525-75f3e585daa0")
+[0-5] [90m2022-07-11T12:13:11.305Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element/40093c47-e6e0-45c7-a525-75f3e585daa0/text
+[0-5] [90m2022-07-11T12:13:11.338Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $7.99
+[0-5] [90m2022-07-11T12:13:11.339Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m getElementText("3702f1d8-83ac-4da2-bc6d-d2855c539c3e")
+[0-5] [90m2022-07-11T12:13:11.339Z[39m [96mINFO[39m [97mwebdriver[39m: [GET] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec/element/3702f1d8-83ac-4da2-bc6d-d2855c539c3e/text
+[0-5] [90m2022-07-11T12:13:11.378Z[39m [96mINFO[39m [97mwebdriver[39m: [36mRESULT[39m $15.99
 [0-5]  All the product price with $:-$29.99,$9.99,$15.99,$49.99,$7.99,$15.99
 [0-5] Price in numbers:- 29.99,9.99,15.99,49.99,7.99,15.99
 [0-5] >> step: {"id":"15","text":"Validate all products have valid price","type":"Outcome","astNodeIds":["7","9"],"keyword":"Then "}
-[0-5] >> scenariop is: {"id":"0","uri":"E:\\Visual Studio\\documents\\workspace\\WDIO\\test\\features\\inventory\\WebAdvansedInvetory.feature","astNodeIds":["12","9"],"name":"INT_TC001: Demo Advansed Web interaction inventory","language":"en","steps":[{"id":"13","text":"As a standard user I login to inventory web page","type":"Context","argument":{"dataTable":{"rows":[{"cells":[{"value":"userType"},{"value":"Username"}]},{"cells":[{"value":"StdUser"},{"value":"standard_user"}]},{"cells":[{"value":"ProdUser"},{"value":"locked_out_user"}]},{"cells":[{"value":"ProbUser"},{"value":"problem_use"}]},{"cells":[{"value":"PerfUser"},{"value":"performance_glitch_user"}]}]}},"astNodeIds":["5","9"],"keyword":"Given "},{"id":"14","text":"Inventory page should list 6","type":"Outcome","astNodeIds":["6","9"],"keyword":"Then "},{"id":"15","text":"Validate all products have valid price","type":"Outcome","astNodeIds":["7","9"],"keyword":"Then "}],"tags":[{"name":"@WebAdvansed","astNodeId":"11"}]}
-[0-5] >> result is : {"passed":true,"duration":183.252699}
+[0-5] >> scenariop is: {"id":"0","uri":"E:\\Visual Studio\\documents\\workspace\\WDIO\\test\\features\\inventory\\WebAdvansedInvetory.feature","astNodeIds":["12","9"],"name":"INT_TC001: Demo Advansed Web interaction inventory","language":"en","steps":[{"id":"13","text":"As a standard user I login to inventory web page","type":"Context","argument":{"dataTable":{"rows":[{"cells":[{"value":"userType"},{"value":"Username"}]},{"cells":[{"value":"StdUser"},{"value":"standard_user"}]},{"cells":[{"value":"ProdUser"},{"value":"locked_out_user"}]},{"cells":[{"value":"ProbUser"},{"value":"problem_use"}]},{"cells":[{"value":"PerfUser"},{"value":"performance_glitch_user"}]}]}},"astNodeIds":["5","9"],"keyword":"Given "},{"id":"14","text":"Inventory page should list 9","type":"Outcome","astNodeIds":["6","9"],"keyword":"Then "},{"id":"15","text":"Validate all products have valid price","type":"Outcome","astNodeIds":["7","9"],"keyword":"Then "}],"tags":[{"name":"@WebAdvansed","astNodeId":"11"}]}
+[0-5] >> result is : {"passed":true,"duration":333.590099}
 [0-5] >> context is: {"wdioRetries":0,"testid":"INT_TC001","appid":"ABC123"}
-[0-5] [90m2022-07-11T10:08:45.672Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m deleteSession()
-[0-5] [90m2022-07-11T10:08:45.673Z[39m [96mINFO[39m [97mwebdriver[39m: [DELETE] http://localhost:9515/session/2428ca6c38b62fe5dc8b5b022e215b8b
+[0-5] [90m2022-07-11T12:13:11.401Z[39m [96mINFO[39m [97mwebdriver[39m: [35mCOMMAND[39m deleteSession()
+[0-5] [90m2022-07-11T12:13:11.402Z[39m [96mINFO[39m [97mwebdriver[39m: [DELETE] http://localhost:9515/session/00860e6f6b852740a7f37069e39216ec
 [0-5] PASSED in chrome - E:\Visual Studio\documents\workspace\WDIO\test\features\inventory\WebAdvansedInvetory.feature
-2022-07-11T10:08:46.062Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
-2022-07-11T10:08:46.063Z INFO @wdio/cli:launcher: Run onComplete hook
+2022-07-11T12:13:11.947Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-07-11T12:13:11.947Z INFO @wdio/cli:launcher: Run onComplete hook
 
  "spec" Reporter:
 ------------------------------------------------------------------
 [chrome 103.0.5060.114 windows #0-5] Running: chrome (v103.0.5060.114) on windows
-[chrome 103.0.5060.114 windows #0-5] Session ID: 2428ca6c38b62fe5dc8b5b022e215b8b
+[chrome 103.0.5060.114 windows #0-5] Session ID: 00860e6f6b852740a7f37069e39216ec
 [chrome 103.0.5060.114 windows #0-5]
 [chrome 103.0.5060.114 windows #0-5] » \test\features\inventory\WebAdvansedInvetory.feature
 [chrome 103.0.5060.114 windows #0-5] Advansed Web Interaction inventory
@@ -219,14 +219,14 @@ Execution of 6 workers started at 2022-07-11T10:08:05.198Z
 [chrome 103.0.5060.114 windows #0-5]      │ ProdUser │ locked_out_user         │
 [chrome 103.0.5060.114 windows #0-5]      │ ProbUser │ problem_use             │
 [chrome 103.0.5060.114 windows #0-5]      │ PerfUser │ performance_glitch_user │
-[chrome 103.0.5060.114 windows #0-5]    [32m✓[39m Then Inventory page should list 6
+[chrome 103.0.5060.114 windows #0-5]    [32m✓[39m Then Inventory page should list 9
 [chrome 103.0.5060.114 windows #0-5]    [32m✓[39m Then Validate all products have valid price
 [chrome 103.0.5060.114 windows #0-5]
-[chrome 103.0.5060.114 windows #0-5] [32m3 passing (29.1s)[39m
+[chrome 103.0.5060.114 windows #0-5] [32m3 passing (30.3s)[39m
 
 
 Spec Files:	 1 passed, 5 skipped, 6 total (100% completed) in 00:00:40 
 
-2022-07-11T10:08:46.066Z INFO @wdio/local-runner: Shutting down spawned worker
-2022-07-11T10:08:46.325Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
-2022-07-11T10:08:46.325Z INFO @wdio/local-runner: shutting down
+2022-07-11T12:13:11.950Z INFO @wdio/local-runner: Shutting down spawned worker
+2022-07-11T12:13:12.213Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2022-07-11T12:13:12.214Z INFO @wdio/local-runner: shutting down
