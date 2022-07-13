@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "IOofficialWebsite": "set HEADLESS=N && npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@IOofficialWebsite'",
-        "test:WebAdvansed": "set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@WebAdvansed' > output.txt",
+        "test:WebAdvansed": "set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@WebAdvansed'",
         "uat:WebAdvansed": "set HEADLESS=N && npx wdio config/wdio.uat.conf.ts --cucumberOpts.tagExpression='@WebAdvansed'"
     },
     "keywords": [

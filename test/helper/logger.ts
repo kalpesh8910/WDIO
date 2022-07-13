@@ -1,4 +1,4 @@
-
+//import winston from "winston"
 import {format, createLogger, transports, log, info, Logger } from "winston"
 
  // Format console.log
@@ -7,7 +7,8 @@ const consoleFormat = format.printf(({ level, message
     const logLevel = format.colorize().colorize(level, `${level.toUpperCase()}`)
     return `[${logLevel}]: ${message}`
 })
-// Logger
+// Loggerallure serve
+
 let logger = createLogger({
     transports: [
         new transports.Console({

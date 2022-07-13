@@ -3,7 +3,7 @@ Feature: Advansed Web Interaction inventory
     @WebAdvansed
     Scenario Outline: <TestId>: Demo Advansed Web interaction inventory
 
-        # just a test manaase
+        # just a test message
         Given As a standard user I login to inventory web page
 
             | userType | Username                |
@@ -18,4 +18,4 @@ Feature: Advansed Web Interaction inventory
 
         Examples:
             | TestId    | NumberOfProducts |
-            | INT_TC001 | 9                |
+            | INT_TC001 | 6                |
