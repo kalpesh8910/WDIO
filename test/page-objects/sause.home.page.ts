@@ -11,7 +11,7 @@ class Homepage extends Page{
     //  Page Objects
 
     get usernameInputbox() {return $(`#user-name`)}
-    get passwordInputbox() {return $(`#passwor`)}
+    get passwordInputbox() {return $(`#password`)}
     get loginbutton() {return $(`#login-button`)}
 
     // Page Actions

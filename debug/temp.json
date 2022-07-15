@@ -1,104 +1,54 @@
 {
-  "id": "0",
-  "uri": "C:\\Visual Studio\\documents\\workspace\\WDIO\\test\\features\\inventory\\WebAdvansedInvetory.feature",
-  "astNodeIds": [
-    "12",
-    "9"
-  ],
-  "name": "Demo Advansed Web interaction inventory",
-  "language": "en",
-  "steps": [
+  "page": 2,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
     {
-      "id": "13",
-      "text": "As a standard user I login to inventory web page",
-      "type": "Context",
-      "argument": {
-        "dataTable": {
-          "rows": [
-            {
-              "cells": [
-                {
-                  "value": "userType"
-                },
-                {
-                  "value": "Username"
-                }
-              ]
-            },
-            {
-              "cells": [
-                {
-                  "value": "StdUser"
-                },
-                {
-                  "value": "standard_user"
-                }
-              ]
-            },
-            {
-              "cells": [
-                {
-                  "value": "ProdUser"
-                },
-                {
-                  "value": "locked_out_user"
-                }
-              ]
-            },
-            {
-              "cells": [
-                {
-                  "value": "ProbUser"
-                },
-                {
-                  "value": "problem_use"
-                }
-              ]
-            },
-            {
-              "cells": [
-                {
-                  "value": "PerfUser"
-                },
-                {
-                  "value": "performance_glitch_user"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      "astNodeIds": [
-        "5",
-        "9"
-      ],
-      "keyword": "Given "
+      "id": 7,
+      "email": "michael.lawson@reqres.in",
+      "first_name": "Michael",
+      "last_name": "Lawson",
+      "avatar": "https://reqres.in/img/faces/7-image.jpg"
     },
     {
-      "id": "14",
-      "text": "Inventory page should list 6",
-      "type": "Outcome",
-      "astNodeIds": [
-        "6",
-        "9"
-      ],
-      "keyword": "Then "
+      "id": 8,
+      "email": "lindsay.ferguson@reqres.in",
+      "first_name": "Lindsay",
+      "last_name": "Ferguson",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg"
     },
     {
-      "id": "15",
-      "text": "Validate all products have valid price",
-      "type": "Outcome",
-      "astNodeIds": [
-        "7",
-        "9"
-      ],
-      "keyword": "Then "
+      "id": 9,
+      "email": "tobias.funke@reqres.in",
+      "first_name": "Tobias",
+      "last_name": "Funke",
+      "avatar": "https://reqres.in/img/faces/9-image.jpg"
+    },
+    {
+      "id": 10,
+      "email": "byron.fields@reqres.in",
+      "first_name": "Byron",
+      "last_name": "Fields",
+      "avatar": "https://reqres.in/img/faces/10-image.jpg"
+    },
+    {
+      "id": 11,
+      "email": "george.edwards@reqres.in",
+      "first_name": "George",
+      "last_name": "Edwards",
+      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    },
+    {
+      "id": 12,
+      "email": "rachel.howell@reqres.in",
+      "first_name": "Rachel",
+      "last_name": "Howell",
+      "avatar": "https://reqres.in/img/faces/12-image.jpg"
     }
   ],
-  "tags": [
-    {
-      "name": "@WebAdvansed",
-      "astNodeId": "11"
-    }
-  ]
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
 }
