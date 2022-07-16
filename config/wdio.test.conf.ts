@@ -6,6 +6,7 @@ export const config = Object.assign(baseConfig,{
     // We merging the test confifguration to base configuration
 
     environment: "TEST",
-    sauceDemoURL: "https://www.saucedemo.com"
+    sauceDemoURL: "https://www.saucedemo.com",
+    reqresBaseURL: "https://reqres.in"
 
 })

@@ -1,19 +1,20 @@
 import request from "supertest"
 import reporter from "../helper/reporter"
 
+/*
 let payload = {
         email: "eve.holt@reqres.in",
         password: "pistol"
 }
-
 
 // what is Request
 
 console.log(`The typeof request: ${typeof request}`); // function
 console.log(`Number of args: ${request.length}`); // 1
 console.log(`What is the defination of the function: ${request.toString()}`);
+*/
 
-async function GET(testid:string, baseURL:string, endpoint:string, authToken:string, queryParam: object){ // Self invoking fuctions
+async function GET(testid:string, baseURL:string, endpoint:string, authToken:string, queryParam: object,){ // Self invoking fuctions
   
   if(!baseURL || !endpoint){  // truthy value check
     throw Error (`one of the given values base URL:${baseURL}, Given endpoint:${endpoint} is not valid.`)
@@ -36,7 +37,7 @@ async function GET(testid:string, baseURL:string, endpoint:string, authToken:str
     }
 }
 
-async function POST(testid:string, baseURL:string, endpoint:string, authToken:string, payload: object){ // Self invoking fuctions
+async function POST(testid:string, baseURL:string, endpoint:string, authToken:string, payload: object,){ // Self invoking fuctions
   
     if(!baseURL || !endpoint){  // truthy value check
       throw Error (`one of the given values base URL:${baseURL}, Given endpoint:${endpoint} is not valid.`)

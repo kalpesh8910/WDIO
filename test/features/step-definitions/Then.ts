@@ -77,3 +77,8 @@ let invalidpriceArray = pricenumarr.filter(ele => ele<=0)
 expect(invalidpriceArray.length).to.equal(0);
 
 })
+
+Then(/^Verify if all users exist in customers list$/, async function() {
+
+
+})
