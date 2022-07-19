@@ -6,13 +6,14 @@ import allure from "@wdio/allure-reporter"
 import reporter from "../../helper/reporter";
 import sauseHomePage from "../../page-objects/sause.home.page";
 
- import {path} from 'app-root-path';
- import {config as configuration} from "dotenv";
- import apiHelper from "../../helper/apiHelper";
- console.log("appRoot", path);
- configuration({ path: `${path}/.env` });
- import constants from "../../../data/Constants.json"
-import fs from "fs" 
+import {path} from 'app-root-path';
+import {config as configuration} from "dotenv";
+import apiHelper from "../../helper/apiHelper";
+console.log("appRoot", path);
+configuration({ path: `${path}/.env` });
+import constants from "../../../data/Constants.json";
+import fs from "fs";
+import testdata from "../../../csv/testdata";
 
 Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (prefixText, userType, dataTable) {
     
@@ -22,8 +23,17 @@ Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (pre
     let dt = dataTable.hashes()
     // @ts-ignore
 
+    
     await sauseHomePage.navigateTo(browser.config.sauceDemoURL)
-    await sauseHomePage.loginTosauceApp(this.testid, process.env.TEST_STD_USERNAME, process.env.TEST_STD_PASSWORD)
+    let testfunc = await testdata();
+    console.log(`test function value is :- `+ typeof testfunc);
+    console.log(`Excel username is:-`+testfunc[0][0]); 
+    console.log(`Excel password is:-`+testfunc[0][1]); 
+    console.log(`Email id is:-`+testfunc[0][2]);
+    
+    //await sauseHomePage.loginTosauceApp(this.testid, process.env.TEST_STD_USERNAME, process.env.TEST_STD_PASSWORD)
+
+    await sauseHomePage.loginTosauceApp(this.testid, testfunc[0][0], testfunc[0][1])
     
     // we can write as per below
     // sauseHomePage.enterUsername

@@ -24,7 +24,7 @@ export default class Page{
         await ele.click()
     }
 
-    async typeInto  (ele: WebdriverIO.Element, text:string) {
+    async typeInto(ele: WebdriverIO.Element, text:string) {
         await ele.waitForDisplayed({timeout: 5000})
         if(!ele.elementId){
             throw Error(ele.error.message)

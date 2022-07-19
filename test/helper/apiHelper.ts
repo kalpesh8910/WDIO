@@ -1,7 +1,7 @@
 import request from "supertest"
 import reporter from "../helper/reporter"
 
-/*
+
 let payload = {
         email: "eve.holt@reqres.in",
         password: "pistol"
@@ -12,7 +12,7 @@ let payload = {
 console.log(`The typeof request: ${typeof request}`); // function
 console.log(`Number of args: ${request.length}`); // 1
 console.log(`What is the defination of the function: ${request.toString()}`);
-*/
+
 
 async function GET(testid:string, baseURL:string, endpoint:string, authToken:string, queryParam: object,){ // Self invoking fuctions
   

@@ -73,6 +73,11 @@ export const config: Options.Testrunner = {
   exclude: [
     // 'path/to/excluded/files'
   ],
+
+  // suites:{
+
+  
+  // },
   //
   // ============
   // Capabilities
@@ -139,15 +144,15 @@ export const config: Options.Testrunner = {
       // excludeDriverLogs: ['bugreport', 'server'],
     },
 
-    {
-     
-      maxInstances: 3,
-      //
-      browserName: "firefox",
-      acceptInsecureCerts: true,
-      timeouts: { implicit: 10000, pageLoad: 20000, script: 30000 },
+    // {
+    //  // cross browser
+    //   maxInstances: 3,
+    //   //
+    //   browserName: "firefox",
+    //   acceptInsecureCerts: true,
+    //   timeouts: { implicit: 10000, pageLoad: 20000, script: 30000 },
       
-    }
+    // }
   ],
   //
   // ===================
@@ -203,7 +208,10 @@ export const config: Options.Testrunner = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ["chromedriver", "geckodriver"],
+
+  // cross browser service
+  //services: ["chromedriver", "geckodriver"],
+  services: ["chromedriver"],
 
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
@@ -390,9 +398,11 @@ export const config: Options.Testrunner = {
 
     // Take screenshot if test case is failed
 
-    if (!result.passed) {
-      await browser.takeScreenshot();
-    }
+    await browser.takeScreenshot();
+    
+    // if (result.passed) {
+    //   await browser.takeScreenshot();
+    // }
   },
   /**
    *

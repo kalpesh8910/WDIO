@@ -1,27 +1,29 @@
 import Page from "./page"
 import chai from "chai"
 import reporter from "../helper/reporter"
+import Obbject from "./Objects"
 
 class Homepage extends Page{
 
+    public testData  = new Obbject();
     constructor(){
         super()
     }
+    // //  Page Objects
 
-    //  Page Objects
-
-    get usernameInputbox() {return $(`#user-name`)}
-    get passwordInputbox() {return $(`#password`)}
-    get loginbutton() {return $(`#login-button`)}
+    //    get usernameInputbox() {return $(`#user-name`)}
+    //    get passwordInputbox() {return $(`#password`)}
+    //    get loginbutton() {return $(`#login-button`)}
 
     // Page Actions
 
     async enterUsername(testid: string, username: string){
+        
         if(!username) throw Error (`Given username: ${username} is not valid`)
         
         try {
             username = username.trim()
-            await this.typeInto(await this.usernameInputbox, username)
+            await this.typeInto(await this.testData.usernameInputbox, username)
             reporter.addStep(testid, "Info", `Username:${username} entered successfully`)
         } catch (err) {
             err.message = `Error entering username: ${username}, ${err.message}`
@@ -34,7 +36,7 @@ class Homepage extends Page{
         
         try {
             password = password.trim()
-            await this.typeInto(await this.passwordInputbox, password)
+            await this.typeInto(await this.testData.passwordInputbox, password)
             reporter.addStep(testid, "Info", `password entered successfully`)
         } catch (err) {
             err.message = `Error entering password: ${err.message}`
@@ -46,7 +48,7 @@ class Homepage extends Page{
         
         try {
             
-            await this.click(await this.loginbutton)
+            await this.click(await this.testData.loginbutton)
             reporter.addStep(testid, "Info", `Login button clicked.`)
         } catch (err) {
             err.message = `Error clicking login button: ${err.message}`
