@@ -3,9 +3,9 @@
 name: WDIO-CI
 on:
   push:
-    branches: ["local"]
+    branches: ["master"]
   pull_request:
-    branches: ["local"]
+    branches: ["master"]
   workflow_dispatch:
 jobs:
   build:
