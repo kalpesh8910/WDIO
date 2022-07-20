@@ -23,13 +23,13 @@ Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (pre
     let dt = dataTable.hashes()
     // @ts-ignore
 
-    
     await sauseHomePage.navigateTo(browser.config.sauceDemoURL)
     let testfunc = await testdata();
     console.log(`test function value is :- `+ typeof testfunc);
     console.log(`Excel username is:-`+testfunc[0][0]); 
     console.log(`Excel password is:-`+testfunc[0][1]); 
     console.log(`Email id is:-`+testfunc[0][2]);
+    console.log(`Email id is:-`+testfunc[0][3]);
     
     //await sauseHomePage.loginTosauceApp(this.testid, process.env.TEST_STD_USERNAME, process.env.TEST_STD_PASSWORD)
 

@@ -19,3 +19,4 @@ Feature: Advansed Web Interaction inventory
         Examples:
             | TestId    | NumberOfProducts |
             | INT_TC001 | 6                |
+            
