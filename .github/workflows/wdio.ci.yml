@@ -25,5 +25,5 @@ jobs:
           node-version: 14.x
       - name: Install dependencies
         run: npm install
-      - name: Running smoke tests
+      - name: Running WebAdvansed tests
         run: npm run test:WebAdvansed
