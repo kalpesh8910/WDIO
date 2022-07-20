@@ -16,7 +16,7 @@ jobs:
       TEST_STD_USERNAME: standard_user
       TEST_STD_PASSWORD: secret_sauce
     steps:
-      - name: Install 
+      - name: Install chromium
       - run: npm install
       - uses: actions/checkout@v2
       - name: Use Node.js
