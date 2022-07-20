@@ -17,7 +17,7 @@ jobs:
       TEST_STD_PASSWORD: secret_sauce
     steps:
       - name: Install Chromium
-      - run: sudo apt-get install chromium-broser
+      - run: npm install
       - uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v1
