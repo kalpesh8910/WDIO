@@ -8,6 +8,7 @@ export const config = Object.assign(baseConfig,{
     environment: "TEST",
     sauceDemoURL: "https://www.saucedemo.com",
     reqresBaseURL: "https://reqres.in",
-    GoogleURL: "https://www.google.com/"
+    GoogleURL: "https://www.google.com/",
+    filechannelURL: "https://www.filechannels.net/login"
 
 })

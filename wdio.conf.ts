@@ -9,6 +9,7 @@ import ts = require("typescript");
 console.log("appRoot", path);
 configuration({ path: `${path}/.env` });
 import allure from "@wdio/allure-reporter";
+import sendemail from "../../helper/sendemail"
 
 // TODO:
 // 1. import dotenv
@@ -243,7 +244,8 @@ export const config: Options.Testrunner = {
         useCucumberStepReporter: true,
       },
     ],
-  ],
+    
+  ],  
 
   //
   // If you are using Cucumber you need to specify the location of your step definitions.

@@ -14,6 +14,7 @@ configuration({ path: `${path}/.env` });
 import constants from "../../../data/Constants.json";
 import fs from "fs";
 import testdata from "../../../csv/testdata";
+import sendemail from "../../helper/sendemail"
 
 Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (prefixText, userType, dataTable) {
     
@@ -24,7 +25,7 @@ Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (pre
     // @ts-ignore
 
     await sauseHomePage.navigateTo(browser.config.sauceDemoURL)
-    let testfunc = await testdata();
+    let testfunc = await testdata("testdata.csv");
     console.log(`test function value is :- `+ typeof testfunc);
     console.log(`Excel username is:-`+testfunc[0][0]); 
     console.log(`Excel password is:-`+testfunc[0][1]); 
@@ -34,6 +35,8 @@ Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (pre
     //await sauseHomePage.loginTosauceApp(this.testid, process.env.TEST_STD_USERNAME, process.env.TEST_STD_PASSWORD)
 
     await sauseHomePage.loginTosauceApp(this.testid, testfunc[0][0], testfunc[0][1])
+
+    await sendemail()
     
     // we can write as per below
     // sauseHomePage.enterUsername
@@ -41,7 +44,9 @@ Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (pre
     // sauseHomePage.ClickloginBtn
     
   } catch(err){
-    err.message `${this.testid}: Failed at login step.${err.message}`
+    console.log("error is:-"+err)
+    //err.message `${this.testid}: Failed at login step.${err.message}`
+
     throw err
   }
   })
