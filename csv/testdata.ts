@@ -2,8 +2,9 @@ import {parse} from "csv-parse"
 import fs from 'fs'
 import getStream from "get-stream";
 import path from "path"
+import { isConstructorDeclaration } from "typescript";
 
-export default async function csvfunc() {
+export default async function csvfunc(filename) {
 
   //const parseStream = await parse({ delimiter: ",", relaxColumnCount: true });
   const parseStream = await parse({  delimiter: ",",relax: true, escape: '\\' });
@@ -15,7 +16,7 @@ export default async function csvfunc() {
         fs
           .createReadStream(
             //'./testdata.csv.xlsx'
-             path.resolve(`./csv/testdata.csv`)
+             path.resolve(`./csv/${filename}`)
           )
           .pipe(parseStream)
       );
