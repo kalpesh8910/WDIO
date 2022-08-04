@@ -14,7 +14,10 @@ configuration({ path: `${path}/.env` });
 import constants from "../../../data/Constants.json";
 import fs from "fs";
 import testdata from "../../../csv/testdata";
-import sendemail from "../../helper/sendemail"
+import sendemail from "../../helper/sendemail";
+//import credential from "../../../csv/credential.json"
+
+
 
 Given(/^As (a|an) (.*) user I login to inventory web page$/, async function (prefixText, userType, dataTable) {
     
